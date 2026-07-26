@@ -1,0 +1,59 @@
+import SwiftUI
+
+/// The four top-level destinations. Order here defines tab order.
+enum AppTab: Int, CaseIterable, Identifiable, Hashable {
+    case today
+    case assistant
+    case following
+    case profile
+
+    var id: Int { rawValue }
+
+    var title: LocalizedStringResource {
+        switch self {
+        case .today: "Today"
+        case .assistant: "Assistant"
+        case .following: "Following"
+        case .profile: "Profile"
+        }
+    }
+
+    var symbolName: String {
+        switch self {
+        case .today: "sun.max"
+        case .assistant: "bubble.left.and.text.bubble.right"
+        case .following: "eye"
+        case .profile: "person.crop.circle"
+        }
+    }
+}
+
+/// Destinations pushed within the Following tab's navigation stack.
+enum FollowingDestination: Hashable {
+    case topicDetail(UUID)
+}
+
+/// Destinations pushed within the Profile tab's navigation stack.
+enum ProfileDestination: Hashable {
+    case settings
+}
+
+/// Owns per-tab navigation state so pushing a topic detail, switching tabs,
+/// and coming back preserves each stack independently.
+@MainActor
+@Observable
+final class AppRouter {
+    var selectedTab: AppTab = .today
+    var followingPath = NavigationPath()
+    var profilePath = NavigationPath()
+
+    func showTopicDetail(_ topicId: UUID) {
+        selectedTab = .following
+        followingPath.append(FollowingDestination.topicDetail(topicId))
+    }
+
+    func showSettings() {
+        selectedTab = .profile
+        profilePath.append(ProfileDestination.settings)
+    }
+}

@@ -1,0 +1,2482 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld sources": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld nguồn"
+          }
+        }
+      }
+    },
+    "%lldh ago": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giờ trước"
+          }
+        }
+      }
+    },
+    "%lldm ago": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld phút trước"
+          }
+        }
+      }
+    },
+    "1 JPY now buys about 4% less VND than last month — a good moment to exchange money for your trip.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 JPY hiện đổi được ít VND hơn khoảng 4% so với tháng trước — thời điểm tốt để đổi tiền cho chuyến đi."
+          }
+        }
+      }
+    },
+    "2.0L Premium": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản 2.0L Premium"
+          }
+        }
+      }
+    },
+    "2.5L AWD": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản 2.5L AWD"
+          }
+        }
+      }
+    },
+    "3 things worth your attention today.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 điều đáng chú ý hôm nay."
+          }
+        }
+      }
+    },
+    "A bit much": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hơi nhiều"
+          }
+        }
+      }
+    },
+    "A company you follow": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một công ty anh theo dõi"
+          }
+        }
+      }
+    },
+    "A personal brief built around your life.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bản tin cá nhân xoay quanh cuộc sống của anh."
+          }
+        }
+      }
+    },
+    "A skill you are learning": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một kỹ năng anh đang học"
+          }
+        }
+      }
+    },
+    "A team you support": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một đội bóng anh cổ vũ"
+          }
+        }
+      }
+    },
+    "A trip you are planning": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một chuyến đi anh đang lên kế hoạch"
+          }
+        }
+      }
+    },
+    "A trip, a purchase, or a goal on the horizon.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một chuyến đi, một khoản mua sắm, hay một mục tiêu sắp tới."
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giới thiệu"
+          }
+        }
+      }
+    },
+    "About Nora": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Về Nora"
+          }
+        }
+      }
+    },
+    "Account": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tài khoản"
+          }
+        }
+      }
+    },
+    "Action required": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần hành động"
+          }
+        }
+      }
+    },
+    "Active": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chủ động"
+          }
+        }
+      }
+    },
+    "Add": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm"
+          }
+        }
+      }
+    },
+    "Add context": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm ngữ cảnh"
+          }
+        }
+      }
+    },
+    "Add new": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm mới"
+          }
+        }
+      }
+    },
+    "Add topic": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm chủ đề"
+          }
+        }
+      }
+    },
+    "Adjust in your own words": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều chỉnh theo cách của anh"
+          }
+        }
+      }
+    },
+    "Adjust notifications": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều chỉnh thông báo"
+          }
+        }
+      }
+    },
+    "And the topics you care about — Nora will use these as a starting point.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Và những chủ đề anh quan tâm — Nora sẽ dùng đây làm điểm bắt đầu."
+          }
+        }
+      }
+    },
+    "Any big plans coming up?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang có kế hoạch lớn nào?"
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giao diện"
+          }
+        }
+      }
+    },
+    "Apple introduced an expanded `Layout` protocol for finer control over custom containers, useful for complex components.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple giới thiệu `Layout` protocol mở rộng cho phép kiểm soát container tùy biến tốt hơn, hữu ích cho các component phức tạp."
+          }
+        }
+      }
+    },
+    "Assistant": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trợ lý"
+          }
+        }
+      }
+    },
+    "Back": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quay lại"
+          }
+        }
+      }
+    },
+    "Balanced": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cân bằng"
+          }
+        }
+      }
+    },
+    "Bank stocks": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cổ phiếu ngân hàng"
+          }
+        }
+      }
+    },
+    "Behavior": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hành vi"
+          }
+        }
+      }
+    },
+    "Breaking changes": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi phá vỡ tương thích"
+          }
+        }
+      }
+    },
+    "Buy a new car": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mua xe mới"
+          }
+        }
+      }
+    },
+    "Buy a new car in the next 6 months": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mua xe mới trong 6 tháng tới"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hủy"
+          }
+        }
+      }
+    },
+    "Category": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Danh mục"
+          }
+        }
+      }
+    },
+    "Change jobs": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đổi công việc"
+          }
+        }
+      }
+    },
+    "Check your connection and try again.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh kiểm tra kết nối rồi thử lại nhé."
+          }
+        }
+      }
+    },
+    "Compare trims": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So sánh các phiên bản"
+          }
+        }
+      }
+    },
+    "Considering": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang cân nhắc"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếp tục"
+          }
+        }
+      }
+    },
+    "Cooking": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nấu ăn"
+          }
+        }
+      }
+    },
+    "Correct something": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sửa thông tin"
+          }
+        }
+      }
+    },
+    "Daily brief time": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giờ tóm tắt hằng ngày"
+          }
+        }
+      }
+    },
+    "Dark": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tối"
+          }
+        }
+      }
+    },
+    "Data controls": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiểm soát dữ liệu"
+          }
+        }
+      }
+    },
+    "Dealers are covering 50% of the registration fee on 2.0L trims through the end of next month.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đại lý áp dụng ưu đãi 50% lệ phí trước bạ cho các phiên bản 2.0L đến hết tháng sau."
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xóa"
+          }
+        }
+      }
+    },
+    "Dividends": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cổ tức"
+          }
+        }
+      }
+    },
+    "Earnings results": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kết quả kinh doanh"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sửa"
+          }
+        }
+      }
+    },
+    "Entertainment": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giải trí"
+          }
+        }
+      }
+    },
+    "Example: \"Only alert me when something is truly serious.\"": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ví dụ: \"Chỉ báo tôi khi có thông tin thực sự nghiêm trọng.\""
+          }
+        }
+      }
+    },
+    "Export or delete your data, or reset personalization from your Profile.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xuất hoặc xóa dữ liệu, hoặc đặt lại cá nhân hóa trong mục Hồ sơ."
+          }
+        }
+      }
+    },
+    "Favorite": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yêu thích"
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bộ lọc"
+          }
+        }
+      }
+    },
+    "Flight prices": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giá vé máy bay"
+          }
+        }
+      }
+    },
+    "Following": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang theo dõi"
+          }
+        }
+      }
+    },
+    "For example: iOS Developer": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ví dụ: iOS Developer"
+          }
+        }
+      }
+    },
+    "Get started": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bắt đầu"
+          }
+        }
+      }
+    },
+    "Good afternoon": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào buổi chiều"
+          }
+        }
+      }
+    },
+    "Good evening": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào buổi tối"
+          }
+        }
+      }
+    },
+    "Good morning": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào buổi sáng"
+          }
+        }
+      }
+    },
+    "Got it — I've noted your purchase intent.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã ghi nhận ý định mua xe của anh."
+          }
+        }
+      }
+    },
+    "Got it. Nora will keep watching and flag anything worth your attention.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã ghi nhận. Nora sẽ tiếp tục theo dõi và báo lại khi có điều đáng chú ý."
+          }
+        }
+      }
+    },
+    "Health": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sức khỏe"
+          }
+        }
+      }
+    },
+    "Here's what Nora understands": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora đã hiểu được điều này"
+          }
+        }
+      }
+    },
+    "High priority": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ưu tiên cao"
+          }
+        }
+      }
+    },
+    "Holding": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang nắm giữ"
+          }
+        }
+      }
+    },
+    "How Nora understands you": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora hiểu anh thế nào"
+          }
+        }
+      }
+    },
+    "How your data is used": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dữ liệu của anh được dùng thế nào"
+          }
+        }
+      }
+    },
+    "Important updates as they happen, the rest in your brief.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cập nhật quan trọng ngay khi xảy ra, phần còn lại trong bản tóm tắt."
+          }
+        }
+      }
+    },
+    "In %lldd": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Còn %lld ngày"
+          }
+        }
+      }
+    },
+    "In %lldh": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Còn %lld giờ"
+          }
+        }
+      }
+    },
+    "In %lldm": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Còn %lld phút"
+          }
+        }
+      }
+    },
+    "Include in daily brief": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gộp vào tóm tắt hằng ngày"
+          }
+        }
+      }
+    },
+    "Intensity": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mức độ"
+          }
+        }
+      }
+    },
+    "Interests": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sở thích"
+          }
+        }
+      }
+    },
+    "Investments": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đầu tư"
+          }
+        }
+      }
+    },
+    "Is today's brief too much?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nội dung hôm nay có quá nhiều không?"
+          }
+        }
+      }
+    },
+    "JPY exchange rate": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tỷ giá JPY"
+          }
+        }
+      }
+    },
+    "JPY falls to a 3-month low": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tỷ giá JPY giảm xuống mức thấp nhất 3 tháng"
+          }
+        }
+      }
+    },
+    "Japan trip": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyến đi Nhật"
+          }
+        }
+      }
+    },
+    "Just now": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vừa xong"
+          }
+        }
+      }
+    },
+    "Just right": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vừa đủ"
+          }
+        }
+      }
+    },
+    "Keep as is": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giữ như cũ"
+          }
+        }
+      }
+    },
+    "Kickoff at Anfield, 23:30. Liverpool are unbeaten in their last 6 league games.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trận đấu tại Anfield, 23:30. Liverpool đang bất bại 6 trận gần nhất tại giải."
+          }
+        }
+      }
+    },
+    "Language": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngôn ngữ"
+          }
+        }
+      }
+    },
+    "Leadership changes": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi lãnh đạo"
+          }
+        }
+      }
+    },
+    "Learn a new skill": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Học kỹ năng mới"
+          }
+        }
+      }
+    },
+    "Learning": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang học"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sáng"
+          }
+        }
+      }
+    },
+    "Liverpool face Manchester City tonight": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liverpool gặp Manchester City tối nay"
+          }
+        }
+      }
+    },
+    "Liverpool is your favorite club, so Nora rolls match schedules and results into your daily brief.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh theo dõi Liverpool như đội bóng yêu thích, nên Nora gom lịch thi đấu và kết quả vào bản tóm tắt hằng ngày."
+          }
+        }
+      }
+    },
+    "Liverpool is your favorite club.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh theo dõi Liverpool như đội bóng yêu thích."
+          }
+        }
+      }
+    },
+    "Low priority": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ưu tiên thấp"
+          }
+        }
+      }
+    },
+    "Match schedule": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lịch thi đấu"
+          }
+        }
+      }
+    },
+    "Mazda CX-5 registration-fee promotion": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mazda CX-5 có chương trình ưu đãi lệ phí trước bạ"
+          }
+        }
+      }
+    },
+    "Message Nora…": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhắn cho Nora…"
+          }
+        }
+      }
+    },
+    "Minimal": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tối giản"
+          }
+        }
+      }
+    },
+    "More feedback options": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm tùy chọn phản hồi"
+          }
+        }
+      }
+    },
+    "Mute %@": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tắt %@"
+          }
+        }
+      }
+    },
+    "Muted": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã tắt"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tên"
+          }
+        }
+      }
+    },
+    "Needs attention": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần chú ý"
+          }
+        }
+      }
+    },
+    "New API for custom container views in SwiftUI": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API mới cho custom container views trong SwiftUI"
+          }
+        }
+      }
+    },
+    "New APIs": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API mới"
+          }
+        }
+      }
+    },
+    "New model year": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đời xe mới"
+          }
+        }
+      }
+    },
+    "New movie premiere": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khởi chiếu phim mới"
+          }
+        }
+      }
+    },
+    "New releases": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phát hành mới"
+          }
+        }
+      }
+    },
+    "New sci-fi trailer just dropped": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trailer phim khoa học viễn tưởng mới vừa ra mắt"
+          }
+        }
+      }
+    },
+    "Nora doesn't know enough about you yet.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora chưa có đủ thông tin về anh."
+          }
+        }
+      }
+    },
+    "Nora draws from market data providers, sports schedules, travel and pricing feeds, and release calendars.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora lấy dữ liệu từ nhà cung cấp thị trường, lịch thể thao, nguồn du lịch và giá cả, cùng lịch phát hành."
+          }
+        }
+      }
+    },
+    "Nora is typing…": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora đang soạn…"
+          }
+        }
+      }
+    },
+    "Nora learns what matters to you, follows it, and only speaks up when something is worth your attention.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora tìm hiểu điều gì quan trọng với anh, theo dõi nó, và chỉ lên tiếng khi có điều đáng để anh chú ý."
+          }
+        }
+      }
+    },
+    "Nora only uses what you share to personalize your brief. Nothing is sold to third parties.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora chỉ dùng những gì anh chia sẻ để cá nhân hóa bản tóm tắt. Không bán cho bên thứ ba."
+          }
+        }
+      }
+    },
+    "Nora version 1.0 — a personal brief built around your life.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora phiên bản 1.0 — bản tin cá nhân xoay quanh cuộc sống của anh."
+          }
+        }
+      }
+    },
+    "Nora will explain the reason once it has enough information.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora sẽ giải thích lý do khi có đủ thông tin."
+          }
+        }
+      }
+    },
+    "Nora will learn more about you through your conversations.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora sẽ tìm hiểu thêm về anh qua các cuộc trò chuyện tiếp theo."
+          }
+        }
+      }
+    },
+    "Nora will respect this choice — you can change it anytime in Profile.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora sẽ tôn trọng lựa chọn này — anh có thể đổi lại bất cứ lúc nào trong Hồ sơ."
+          }
+        }
+      }
+    },
+    "Nora will track earnings, prices, and related news.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora sẽ theo dõi kết quả kinh doanh, giá và tin tức liên quan."
+          }
+        }
+      }
+    },
+    "Not anymore": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không nữa"
+          }
+        }
+      }
+    },
+    "Not relevant": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không liên quan"
+          }
+        }
+      }
+    },
+    "Not set yet": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chưa thiết lập"
+          }
+        }
+      }
+    },
+    "Not sure yet": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chưa chắc chắn"
+          }
+        }
+      }
+    },
+    "Noted": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã ghi nhận"
+          }
+        }
+      }
+    },
+    "Nothing needs you right now.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không có gì cần anh xử lý ngay."
+          }
+        }
+      }
+    },
+    "Nothing needs your attention right now.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiện chưa có gì cần anh chú ý."
+          }
+        }
+      }
+    },
+    "Nothing tracked yet": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chưa theo dõi gì"
+          }
+        }
+      }
+    },
+    "Notification:": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông báo:"
+          }
+        }
+      }
+    },
+    "Notifications": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông báo"
+          }
+        }
+      }
+    },
+    "Notify immediately": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Báo ngay"
+          }
+        }
+      }
+    },
+    "Now": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bây giờ"
+          }
+        }
+      }
+    },
+    "OCB reports Q2 earnings": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OCB công bố kết quả kinh doanh quý 2"
+          }
+        }
+      }
+    },
+    "Only the most important updates, saved for your daily brief.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ những cập nhật quan trọng nhất, gộp vào tóm tắt hằng ngày."
+          }
+        }
+      }
+    },
+    "Or describe your plan": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoặc mô tả kế hoạch của anh"
+          }
+        }
+      }
+    },
+    "Or type another name, e.g. OCB": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoặc nhập tên khác, ví dụ: OCB"
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khác"
+          }
+        }
+      }
+    },
+    "Ownership costs": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chi phí sở hữu"
+          }
+        }
+      }
+    },
+    "Pause": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tạm dừng"
+          }
+        }
+      }
+    },
+    "Photography": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhiếp ảnh"
+          }
+        }
+      }
+    },
+    "Planning": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang lên kế hoạch"
+          }
+        }
+      }
+    },
+    "Planning to buy within 6 months": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dự kiến mua trong 6 tháng"
+          }
+        }
+      }
+    },
+    "Plans": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kế hoạch"
+          }
+        }
+      }
+    },
+    "Pre-tax profit rose 18% year over year, beating analyst expectations. Non-performing loans dipped slightly.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lợi nhuận trước thuế tăng 18% so với cùng kỳ, vượt kỳ vọng của giới phân tích. Tỷ lệ nợ xấu giảm nhẹ."
+          }
+        }
+      }
+    },
+    "Price changes": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi giá"
+          }
+        }
+      }
+    },
+    "Priority": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Độ ưu tiên"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quyền riêng tư"
+          }
+        }
+      }
+    },
+    "Privacy & data": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quyền riêng tư & dữ liệu"
+          }
+        }
+      }
+    },
+    "Profile": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hồ sơ"
+          }
+        }
+      }
+    },
+    "Promotions": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khuyến mãi"
+          }
+        }
+      }
+    },
+    "Purchases": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mua sắm"
+          }
+        }
+      }
+    },
+    "Real estate": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bất động sản"
+          }
+        }
+      }
+    },
+    "Recent insight": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông tin gần đây"
+          }
+        }
+      }
+    },
+    "Regulatory news": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tin tức pháp lý"
+          }
+        }
+      }
+    },
+    "Relationship": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mối quan hệ"
+          }
+        }
+      }
+    },
+    "Reset personalization": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đặt lại cá nhân hóa"
+          }
+        }
+      }
+    },
+    "Resolved": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã xong"
+          }
+        }
+      }
+    },
+    "Results": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kết quả"
+          }
+        }
+      }
+    },
+    "Resume": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếp tục"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lưu"
+          }
+        }
+      }
+    },
+    "Saved": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã lưu"
+          }
+        }
+      }
+    },
+    "Savings": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiết kiệm"
+          }
+        }
+      }
+    },
+    "Sci-fi movies": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phim khoa học viễn tưởng"
+          }
+        }
+      }
+    },
+    "Search topics": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm chủ đề"
+          }
+        }
+      }
+    },
+    "Send message": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gửi tin nhắn"
+          }
+        }
+      }
+    },
+    "Setting up…": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang thiết lập…"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cài đặt"
+          }
+        }
+      }
+    },
+    "Should tech news outrank job news?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nên ưu tiên tin công nghệ hơn tin tuyển dụng?"
+          }
+        }
+      }
+    },
+    "Skip": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bỏ qua"
+          }
+        }
+      }
+    },
+    "Sources": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nguồn"
+          }
+        }
+      }
+    },
+    "Sports": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thể thao"
+          }
+        }
+      }
+    },
+    "Standard": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiêu chuẩn"
+          }
+        }
+      }
+    },
+    "Start using Nora": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bắt đầu dùng Nora"
+          }
+        }
+      }
+    },
+    "Start with something already on your mind.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bắt đầu với điều gì đó anh đang quan tâm."
+          }
+        }
+      }
+    },
+    "Still am": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Còn"
+          }
+        }
+      }
+    },
+    "Still interested in sci-fi movies?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh còn quan tâm phim khoa học viễn tưởng không?"
+          }
+        }
+      }
+    },
+    "Subscription": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gói đăng ký"
+          }
+        }
+      }
+    },
+    "Summarize this week": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tóm tắt tuần này"
+          }
+        }
+      }
+    },
+    "System": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hệ thống"
+          }
+        }
+      }
+    },
+    "Tell Nora about your work, plans, or something you're considering.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kể cho Nora nghe về công việc, kế hoạch, hoặc điều anh đang cân nhắc."
+          }
+        }
+      }
+    },
+    "Tell Nora what you want": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nói cho Nora biết điều anh muốn"
+          }
+        }
+      }
+    },
+    "Tell me as soon as something worth knowing shows up.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Báo ngay khi có điều đáng biết."
+          }
+        }
+      }
+    },
+    "Thanks": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cảm ơn"
+          }
+        }
+      }
+    },
+    "Thanks for your feedback.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cảm ơn anh đã phản hồi."
+          }
+        }
+      }
+    },
+    "The studio released the first trailer, with a release expected later this year.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Studio vừa công bố trailer đầu tiên, dự kiến khởi chiếu cuối năm nay."
+          }
+        }
+      }
+    },
+    "Theme": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chủ đề"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hôm nay"
+          }
+        }
+      }
+    },
+    "Today's brief could not be refreshed.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không thể làm mới bản tin hôm nay."
+          }
+        }
+      }
+    },
+    "Tomorrow": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngày mai"
+          }
+        }
+      }
+    },
+    "Topics you're interested in": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chủ đề quan tâm"
+          }
+        }
+      }
+    },
+    "Track a new topic": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theo dõi chủ đề mới"
+          }
+        }
+      }
+    },
+    "Track something else": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theo dõi thêm gì đó khác"
+          }
+        }
+      }
+    },
+    "Tracking price, promotions, new trims, and ownership costs": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theo dõi giá, khuyến mãi, phiên bản mới và chi phí sử dụng"
+          }
+        }
+      }
+    },
+    "Trailers": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trailer"
+          }
+        }
+      }
+    },
+    "Transfer news": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tin chuyển nhượng"
+          }
+        }
+      }
+    },
+    "Travel": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du lịch"
+          }
+        }
+      }
+    },
+    "Trip to Japan": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyến đi Nhật Bản"
+          }
+        }
+      }
+    },
+    "Trip to Japan in the fall": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyến đi Nhật vào mùa thu"
+          }
+        }
+      }
+    },
+    "Try again": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thử lại"
+          }
+        }
+      }
+    },
+    "Upcoming": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sắp tới"
+          }
+        }
+      }
+    },
+    "Useful": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hữu ích"
+          }
+        }
+      }
+    },
+    "View full report": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xem báo cáo chi tiết"
+          }
+        }
+      }
+    },
+    "WWDC sessions": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phiên WWDC"
+          }
+        }
+      }
+    },
+    "We're still watching the things you care about.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora vẫn đang theo dõi những điều anh quan tâm."
+          }
+        }
+      }
+    },
+    "Weather": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thời tiết"
+          }
+        }
+      }
+    },
+    "What Nora is tracking": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nora đang theo dõi gì"
+          }
+        }
+      }
+    },
+    "What are you investing in or keeping an eye on?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang đầu tư hoặc theo dõi tài sản nào?"
+          }
+        }
+      }
+    },
+    "What do you do for work?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Công việc hiện tại của anh là gì?"
+          }
+        }
+      }
+    },
+    "What should Nora notify you about right away?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều gì anh muốn được thông báo ngay?"
+          }
+        }
+      }
+    },
+    "What's on your mind?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang nghĩ gì?"
+          }
+        }
+      }
+    },
+    "Which trim are you interested in?": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang quan tâm phiên bản nào?"
+          }
+        }
+      }
+    },
+    "Why this matters to you": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vì sao điều này quan trọng với anh"
+          }
+        }
+      }
+    },
+    "Work": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Công việc"
+          }
+        }
+      }
+    },
+    "Worth knowing": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đáng biết"
+          }
+        }
+      }
+    },
+    "Yes, do that": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đúng vậy"
+          }
+        }
+      }
+    },
+    "Yesterday": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hôm qua"
+          }
+        }
+      }
+    },
+    "You can adjust this anytime in Profile.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh có thể điều chỉnh bất cứ lúc nào trong Hồ sơ."
+          }
+        }
+      }
+    },
+    "You hold OCB as a mid-term position, so Nora prioritizes earnings, leadership changes, dividends, and regulatory news.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang nắm giữ OCB theo chiến lược trung hạn, vì vậy Nora ưu tiên kết quả kinh doanh, thay đổi lãnh đạo, cổ tức và thông tin từ cơ quan quản lý."
+          }
+        }
+      }
+    },
+    "You hold OCB — this directly affects your investment.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang nắm giữ OCB — đây là thông tin ảnh hưởng trực tiếp đến khoản đầu tư của anh."
+          }
+        }
+      }
+    },
+    "You love sci-fi films, so Nora rolls new releases into your brief.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh thích phim khoa học viễn tưởng, nên Nora gom các phim mới ra mắt vào bản tóm tắt."
+          }
+        }
+      }
+    },
+    "You love the sci-fi genre.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh thích thể loại phim khoa học viễn tưởng."
+          }
+        }
+      }
+    },
+    "You work as an iOS Developer and follow SwiftUI, so Nora prioritizes new APIs and changes that could affect your work.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh làm iOS Developer và đang theo dõi SwiftUI, nên Nora ưu tiên API mới và thay đổi có thể ảnh hưởng đến công việc."
+          }
+        }
+      }
+    },
+    "You're a %@": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh làm %@"
+          }
+        }
+      }
+    },
+    "You're an iOS Developer following SwiftUI to stay current at work.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang làm iOS Developer và theo dõi SwiftUI để cập nhật công việc."
+          }
+        }
+      }
+    },
+    "You're considering a Mazda CX-5 in the next 6 months, so Nora tracks pricing, promotions, and new model years.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang cân nhắc mua Mazda CX-5 trong 6 tháng tới, nên Nora theo dõi giá, khuyến mãi và phiên bản mới."
+          }
+        }
+      }
+    },
+    "You're considering a Mazda CX-5 in the next 6 months.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang cân nhắc mua Mazda CX-5 trong 6 tháng tới."
+          }
+        }
+      }
+    },
+    "You're on the free plan. Upgrade for real-time alerts across every topic.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang dùng gói miễn phí. Nâng cấp để nhận cảnh báo tức thời cho mọi chủ đề."
+          }
+        }
+      }
+    },
+    "You're planning a trip to Japan, so Nora tracks the exchange rate, weather, and flight prices.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang lên kế hoạch đi Nhật, nên Nora theo dõi tỷ giá, thời tiết và giá vé máy bay."
+          }
+        }
+      }
+    },
+    "You're planning a trip to Japan, so exchange-rate moves affect your trip budget.": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anh đang lên kế hoạch đi Nhật, nên biến động tỷ giá ảnh hưởng đến ngân sách chuyến đi."
+          }
+        }
+      }
+    },
+    "e.g. OCB, Liverpool FC": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ví dụ: OCB, Liverpool FC"
+          }
+        }
+      }
+    },
+    "e.g. iOS Developer": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ví dụ: Lập trình viên iOS"
+          }
+        }
+      }
+    },
+    "filter.active": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Active"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đang hoạt động"
+          }
+        }
+      }
+    },
+    "filter.all": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tất cả"
+          }
+        }
+      }
+    },
+    "filter.paused": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paused"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã tạm dừng"
+          }
+        }
+      }
+    },
+    "following %@": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "đang theo dõi %@"
+          }
+        }
+      }
+    },
+    "interested in %@": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "quan tâm %@"
+          }
+        }
+      }
+    },
+    "language.english": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếng Anh"
+          }
+        }
+      }
+    },
+    "language.system": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theo hệ thống"
+          }
+        }
+      }
+    },
+    "language.vietnamese": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vietnamese"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếng Việt"
+          }
+        }
+      }
+    },
+    "planning %@": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "có kế hoạch %@"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

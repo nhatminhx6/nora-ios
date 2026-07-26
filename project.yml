@@ -1,0 +1,59 @@
+name: Nora
+options:
+  bundleIdPrefix: com.nora
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+  knownRegions:
+    - en
+    - vi
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_PREVIEWS: YES
+
+targets:
+  Nora:
+    type: application
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - path: Nora
+    info:
+      path: Nora/Support/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        CFBundleDisplayName: Nora
+        CFBundleLocalizations:
+          - en
+          - vi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nora.app
+        PRODUCT_NAME: Nora
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_ASSET_PATHS: ""
+    scheme:
+      testTargets:
+        - NoraTests
+      gatherCoverageData: true
+  NoraTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - path: NoraTests
+    dependencies:
+      - target: Nora
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nora.app.tests
+        GENERATE_INFOPLIST_FILE: YES
