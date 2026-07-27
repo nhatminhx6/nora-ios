@@ -31,6 +31,8 @@ struct ProfileView: View {
                 Color.clear
             }
         }
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationTitle("Profile")
         .task {
             if store == nil {
@@ -104,6 +106,7 @@ struct ProfileView: View {
             }
         }
         .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
     }
 
     @ViewBuilder

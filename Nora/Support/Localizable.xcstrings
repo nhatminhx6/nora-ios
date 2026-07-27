@@ -2091,6 +2091,16 @@
         }
       }
     },
+    "Welcome": {
+      "localizations": {
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào mừng"
+          }
+        }
+      }
+    },
     "What Nora is tracking": {
       "localizations": {
         "vi": {

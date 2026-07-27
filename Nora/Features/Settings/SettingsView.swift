@@ -33,6 +33,8 @@ struct SettingsView: View {
                 Color.clear
             }
         }
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
         .task {
@@ -98,6 +100,7 @@ struct SettingsView: View {
                 NavigationLink("About") { PlaceholderInfoView(title: "About Nora", text: "Nora version 1.0 — a personal brief built around your life.") }
             }
         }
+        .scrollContentBackground(.hidden)
     }
 }
 

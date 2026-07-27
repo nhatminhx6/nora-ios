@@ -14,7 +14,8 @@ struct TodayView: View {
                 content(store: store)
             }
         }
-        .noraScreenBackground()
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)

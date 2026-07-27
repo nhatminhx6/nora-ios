@@ -9,11 +9,29 @@ struct PrimaryButtonStyle: ButtonStyle {
             .font(.noraCardTitle)
             .foregroundStyle(.white)
             .frame(maxWidth: isFullWidth ? .infinity : nil)
-            .frame(minHeight: TouchTarget.minimum)
+            .frame(minHeight: 54)
             .padding(.horizontal, Spacing.lg)
-            .background(Color.noraAccent.opacity(configuration.isPressed ? 0.85 : 1))
-            .clipShape(RoundedRectangle(cornerRadius: Radius.md, style: .continuous))
+            .background(
+                LinearGradient(
+                    colors: [Color.noraAccentBright, Color.noraAccent],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+            )
+            // Glossy top sheen.
+            .overlay(
+                LinearGradient(
+                    colors: [Color.white.opacity(0.35), Color.clear],
+                    startPoint: .top,
+                    endPoint: .center
+                )
+                .blendMode(.softLight)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+            // Teal glow lift.
+            .shadow(color: Color.noraAccent.opacity(configuration.isPressed ? 0.2 : 0.45), radius: 18, y: 8)
             .scaleEffect(configuration.isPressed ? 0.98 : 1)
+            .opacity(configuration.isPressed ? 0.95 : 1)
             .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
     }
 }
@@ -27,10 +45,10 @@ struct SecondaryButtonStyle: ButtonStyle {
             .font(.noraCardTitle)
             .foregroundStyle(Color.noraAccent)
             .frame(maxWidth: isFullWidth ? .infinity : nil)
-            .frame(minHeight: TouchTarget.minimum)
+            .frame(minHeight: 52)
             .padding(.horizontal, Spacing.lg)
             .background(Color.noraAccentSoft.opacity(configuration.isPressed ? 0.6 : 1))
-            .clipShape(RoundedRectangle(cornerRadius: Radius.md, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
     }
 }
 

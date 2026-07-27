@@ -22,7 +22,7 @@ struct DailyReflectionCard: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .noraSurfaceCard()
+        .noraElevatedCard()
         .animation(.easeInOut(duration: 0.25), value: hasAnswered)
     }
 }

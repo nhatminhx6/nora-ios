@@ -16,6 +16,8 @@ struct FollowingView: View {
                 Color.clear
             }
         }
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationTitle("Following")
         .task {
             if store == nil {
@@ -75,6 +77,7 @@ struct FollowingView: View {
                 }
             }
             .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
             .searchable(text: Bindable(store).searchText, prompt: "Search topics")
             .toolbar {
                 addButton

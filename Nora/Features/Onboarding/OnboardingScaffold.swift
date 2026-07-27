@@ -43,7 +43,8 @@ struct OnboardingScaffold<Content: View>: View {
 
             footer
         }
-        .noraScreenBackground()
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
     }
 
     private var header: some View {

@@ -19,7 +19,8 @@ struct AssistantView: View {
                 Color.clear
             }
         }
-        .noraScreenBackground()
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationTitle("Assistant")
         .navigationBarTitleDisplayMode(.inline)
         .task {

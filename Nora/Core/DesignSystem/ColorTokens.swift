@@ -31,16 +31,29 @@ extension Color {
     // MARK: - Brand
 
     /// The single accent color used across the app for interactive
-    /// elements, selection states, and emphasis.
+    /// elements, selection states, and emphasis. A refined teal.
     static let noraAccent = Color(
-        light: UIColor(red: 0.20, green: 0.36, blue: 0.85, alpha: 1),
-        dark: UIColor(red: 0.42, green: 0.55, blue: 1.0, alpha: 1)
+        light: UIColor(red: 0.09, green: 0.58, blue: 0.63, alpha: 1),
+        dark: UIColor(red: 0.34, green: 0.80, blue: 0.85, alpha: 1)
+    )
+
+    /// Brighter cyan end of the accent, used for glossy gradient fills.
+    static let noraAccentBright = Color(
+        light: UIColor(red: 0.20, green: 0.74, blue: 0.76, alpha: 1),
+        dark: UIColor(red: 0.46, green: 0.88, blue: 0.92, alpha: 1)
     )
 
     /// Soft tint of the accent color, used behind selected chips or icons.
     static let noraAccentSoft = Color(
-        light: UIColor(red: 0.20, green: 0.36, blue: 0.85, alpha: 0.1),
-        dark: UIColor(red: 0.42, green: 0.55, blue: 1.0, alpha: 0.16)
+        light: UIColor(red: 0.09, green: 0.58, blue: 0.63, alpha: 0.12),
+        dark: UIColor(red: 0.34, green: 0.80, blue: 0.85, alpha: 0.18)
+    )
+
+    /// A warm highlight used in atmospheric hero backdrops — the "daylight"
+    /// glow that gives the glossy, photographic feel.
+    static let noraGlow = Color(
+        light: UIColor(red: 1.0, green: 0.86, blue: 0.66, alpha: 1),
+        dark: UIColor(red: 1.0, green: 0.82, blue: 0.60, alpha: 1)
     )
 
     // MARK: - Semantic status

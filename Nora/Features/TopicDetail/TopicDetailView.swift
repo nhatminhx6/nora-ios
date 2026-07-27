@@ -18,6 +18,8 @@ struct TopicDetailView: View {
                 TodaySkeletonView()
             }
         }
+        .background { NoraHeroBackground() }
+        .environment(\.colorScheme, .dark)
         .navigationBarTitleDisplayMode(.inline)
         .task {
             if store == nil {
