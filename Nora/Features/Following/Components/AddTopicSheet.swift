@@ -16,6 +16,7 @@ struct AddTopicSheet: View {
                 Section("Name") {
                     TextField("e.g. OCB, Liverpool FC", text: $name)
                 }
+                .listRowBackground(Color.noraGlassTeal)
 
                 Section("Category") {
                     Picker("Category", selection: $category) {
@@ -25,6 +26,7 @@ struct AddTopicSheet: View {
                     }
                     .pickerStyle(.menu)
                 }
+                .listRowBackground(Color.noraGlassWarm)
 
                 Section("Relationship") {
                     Picker("Relationship", selection: $relationship) {
@@ -34,7 +36,11 @@ struct AddTopicSheet: View {
                     }
                     .pickerStyle(.menu)
                 }
+                .listRowBackground(Color.noraGlassTeal)
             }
+            .scrollContentBackground(.hidden)
+            .background { NoraHeroBackground() }
+            .environment(\.colorScheme, .dark)
             .navigationTitle("Add topic")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

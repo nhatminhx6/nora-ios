@@ -16,8 +16,11 @@ struct AssistantComposerView: View {
                 .lineLimit(1...5)
                 .padding(.horizontal, Spacing.base)
                 .padding(.vertical, Spacing.sm)
-                .background(Color.noraSurface)
-                .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+                .background(Color.noraSurface, in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+                .overlay {
+                    RoundedRectangle(cornerRadius: Radius.lg, style: .continuous)
+                        .strokeBorder(.white.opacity(0.20), lineWidth: 0.8)
+                }
                 .focused($isFocused)
                 .submitLabel(.send)
                 .onSubmit(onSend)
@@ -35,7 +38,10 @@ struct AssistantComposerView: View {
         }
         .padding(.horizontal, Spacing.base)
         .padding(.vertical, Spacing.sm)
-        .background(.bar)
+        .background(Color.noraGlassTeal)
+        .overlay(alignment: .top) {
+            Divider().overlay(.white.opacity(0.16))
+        }
     }
 
     private var canSend: Bool {

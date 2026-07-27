@@ -90,6 +90,8 @@ struct ProfileView: View {
                     onEdit: { editTarget = .goals }
                 )
             }
+            .listRowBackground(Color.noraGlassTeal)
+            .listRowSeparatorTint(.white.opacity(0.14))
 
             Section("Behavior") {
                 ProfileSectionRow(
@@ -104,6 +106,8 @@ struct ProfileView: View {
                         .foregroundStyle(Color.noraTextPrimary)
                 }
             }
+            .listRowBackground(Color.noraGlassWarm)
+            .listRowSeparatorTint(.white.opacity(0.14))
         }
         .listStyle(.insetGrouped)
         .scrollContentBackground(.hidden)
@@ -138,7 +142,11 @@ private struct ProfessionEditSheet: View {
         NavigationStack {
             Form {
                 TextField("e.g. iOS Developer", text: $value)
+                    .listRowBackground(Color.noraGlassTeal)
             }
+            .scrollContentBackground(.hidden)
+            .background { NoraHeroBackground() }
+            .environment(\.colorScheme, .dark)
             .navigationTitle("Work")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -1,50 +1,56 @@
 import SwiftUI
 
-/// A dark, moody, glossy backdrop built from an iOS 18 `MeshGradient`:
-/// deep navy base with glowing teal blooms and a warm daylight highlight —
-/// the "sun through fog at dusk" feel. Designed to sit under light (white)
-/// text with frosted-glass cards glowing on top. Always renders dark, so the
-/// hero screens read the same in Light and Dark Mode.
+/// The shared photographic environment for every Nora screen. Onboarding and
+/// the main app intentionally use the same city, fog, warm flare, and dark
+/// lower gradient so completing onboarding never feels like entering a
+/// different product.
 struct NoraHeroBackground: View {
-    /// Kept for call-site compatibility; the moody hero is always full-bleed.
     var intensity: Double = 1
 
     var body: some View {
-        ZStack {
-            base
-
-            MeshGradient(
-                width: 3,
-                height: 3,
-                points: [
-                    [0.0, 0.0], [0.5, 0.0], [1.0, 0.0],
-                    [0.0, 0.5], [0.5, 0.5], [1.0, 0.5],
-                    [0.0, 1.0], [0.5, 1.0], [1.0, 1.0],
-                ],
-                colors: [
-                    tealGlow, teal, warmGlow,
-                    navy, tealDeep, blueDeep,
-                    base, base, base,
-                ]
-            )
+        GeometryReader { proxy in
+            Image("WelcomeCity")
+                .resizable()
+                .scaledToFill()
+                .frame(width: proxy.size.width, height: proxy.size.height)
+                .clipped()
+                .overlay {
+                    LinearGradient(
+                        stops: [
+                            .init(color: mist.opacity(0.12 * intensity), location: 0),
+                            .init(color: deepTeal.opacity(0.28 * intensity), location: 0.28),
+                            .init(color: deepNavy.opacity(0.68 * intensity), location: 0.66),
+                            .init(color: deepNavy.opacity(0.94), location: 1),
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                }
+                .overlay {
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.02, green: 0.45, blue: 0.50).opacity(0.24 * intensity),
+                            .clear,
+                            Color.orange.opacity(0.10 * intensity),
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .topTrailing
+                    )
+                }
         }
         .ignoresSafeArea()
+        .accessibilityHidden(true)
     }
 
-    // Fixed moody palette — the hero is always dark regardless of theme.
-    private let base = Color(red: 0.04, green: 0.07, blue: 0.10)
-    private var tealGlow: Color { Color(red: 0.10, green: 0.55, blue: 0.58) }
-    private var teal: Color { Color(red: 0.06, green: 0.40, blue: 0.46) }
-    private var warmGlow: Color { Color(red: 0.62, green: 0.44, blue: 0.26) }
-    private var navy: Color { Color(red: 0.05, green: 0.12, blue: 0.20) }
-    private var tealDeep: Color { Color(red: 0.04, green: 0.30, blue: 0.36) }
-    private var blueDeep: Color { Color(red: 0.05, green: 0.10, blue: 0.22) }
+    private let mist = Color(red: 0.66, green: 0.77, blue: 0.79)
+    private let deepTeal = Color(red: 0.02, green: 0.19, blue: 0.23)
+    private let deepNavy = Color(red: 0.01, green: 0.04, blue: 0.07)
 }
 
 #Preview {
     ZStack {
         NoraHeroBackground()
-        Text("Welcome")
+        Text("Nora")
             .font(.system(size: 52, weight: .bold))
             .foregroundStyle(.white)
     }

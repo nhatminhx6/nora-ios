@@ -7,20 +7,55 @@ extension Color {
 
     // MARK: - Surfaces
 
-    /// Primary app background. Matches the system background so content
-    /// feels native rather than "designed on top of" iOS.
-    static let noraBackground = Color(uiColor: .systemBackground)
+    /// Solid fallback behind the photographic environment. Never resolves to
+    /// pure black, even while Nora uses a dark color scheme.
+    static let noraBackground = Color(red: 0.03, green: 0.16, blue: 0.19)
 
-    /// Secondary surface used sparingly for grouped sections (e.g. inset
-    /// groups, the composer bar). Slightly offset from the background.
-    static let noraSurface = Color(uiColor: .secondarySystemBackground)
+    /// Default component surface. Explicitly colored so Dark Mode cannot
+    /// silently turn chips, fields, or cards into black rectangles.
+    static let noraSurface = Color(red: 0.12, green: 0.30, blue: 0.34)
 
-    /// Elevated surface for the rare case a control needs to sit above a
-    /// secondary surface (e.g. a chip on a grouped row).
-    static let noraSurfaceElevated = Color(uiColor: .tertiarySystemBackground)
+    /// Elevated variant with a subtle warm slate undertone.
+    static let noraSurfaceElevated = Color(red: 0.27, green: 0.29, blue: 0.28)
 
     /// Hairline divider color for native list separators and rules.
     static let noraDivider = Color(uiColor: .separator)
+
+    /// Cool tinted glass used for primary grouped content over photography.
+    static let noraGlassTeal = Color(
+        red: 0.08,
+        green: 0.25,
+        blue: 0.29
+    ).opacity(0.88)
+
+    /// Warmer glass for secondary groups, echoing the street-light flare.
+    static let noraGlassWarm = Color(
+        red: 0.27,
+        green: 0.24,
+        blue: 0.21
+    ).opacity(0.84)
+
+    /// Stronger teal used behind selected controls.
+    static let noraGlassSelected = Color(
+        red: 0.07,
+        green: 0.48,
+        blue: 0.53
+    ).opacity(0.92)
+
+    /// Idle selectable controls use a visible blue-gray, never black.
+    static let noraChipIdle = Color(
+        red: 0.19,
+        green: 0.34,
+        blue: 0.38
+    ).opacity(0.96)
+
+    /// Selected controls are brighter than idle surfaces without becoming
+    /// fluorescent.
+    static let noraChipSelected = Color(
+        red: 0.12,
+        green: 0.62,
+        blue: 0.67
+    )
 
     // MARK: - Text
 

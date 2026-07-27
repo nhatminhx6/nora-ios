@@ -54,6 +54,8 @@ struct FollowingView: View {
                                 TopicRowView(topic: topic)
                             }
                             .buttonStyle(.plain)
+                            .listRowBackground(Color.noraGlassTeal)
+                            .listRowSeparatorTint(.white.opacity(0.14))
                             .swipeActions(edge: .trailing) {
                                 Button(role: .destructive) {
                                     store.delete(topic)
@@ -82,12 +84,36 @@ struct FollowingView: View {
             .toolbar {
                 addButton
                 ToolbarItem(placement: .topBarLeading) {
-                    Picker("Filter", selection: Bindable(store).filter) {
+                    Menu {
                         ForEach(FollowingFilter.allCases) { filter in
-                            Text(filter.title).tag(filter)
+                            Button {
+                                store.filter = filter
+                            } label: {
+                                Label {
+                                    Text(filter.title)
+                                } icon: {
+                                    if store.filter == filter {
+                                        Image(systemName: "checkmark")
+                                    }
+                                }
+                            }
+                        }
+                    } label: {
+                        HStack(spacing: Spacing.xs) {
+                            Text(store.filter.title)
+                            Image(systemName: "chevron.down")
+                                .font(.system(size: 10, weight: .bold))
+                        }
+                        .font(.noraSupporting.weight(.semibold))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, Spacing.md)
+                        .frame(minHeight: 38)
+                        .background(Color.noraGlassSelected, in: Capsule())
+                        .overlay {
+                            Capsule()
+                                .strokeBorder(Color.noraAccentBright.opacity(0.72), lineWidth: 0.8)
                         }
                     }
-                    .pickerStyle(.menu)
                 }
             }
         }

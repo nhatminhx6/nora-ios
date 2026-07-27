@@ -64,8 +64,17 @@ private struct OptionRow: View {
                     .font(.system(size: 20))
             }
             .padding(Spacing.base)
-            .background(isSelected ? Color.noraAccentSoft : Color.noraSurface)
-            .clipShape(RoundedRectangle(cornerRadius: Radius.md, style: .continuous))
+            .background(
+                isSelected ? Color.noraGlassSelected : Color.noraSurface,
+                in: RoundedRectangle(cornerRadius: Radius.md, style: .continuous)
+            )
+            .overlay {
+                RoundedRectangle(cornerRadius: Radius.md, style: .continuous)
+                    .strokeBorder(
+                        isSelected ? Color.noraAccentBright.opacity(0.88) : .white.opacity(0.20),
+                        lineWidth: 0.8
+                    )
+            }
         }
         .buttonStyle(.plain)
         .accessibilityAddTraits(isSelected ? [.isSelected] : [])

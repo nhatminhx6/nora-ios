@@ -7,7 +7,8 @@ struct NoraListRowStyle: ViewModifier {
         content
             .padding(.vertical, Spacing.sm)
             .listRowInsets(EdgeInsets(top: 0, leading: Spacing.base, bottom: 0, trailing: Spacing.base))
-            .listRowBackground(Color.noraBackground)
+            .listRowBackground(Color.noraGlassTeal)
+            .listRowSeparatorTint(.white.opacity(0.14))
     }
 }
 

@@ -71,6 +71,8 @@ struct SettingsView: View {
                     store.updateDailyBriefTime(components)
                 }
             }
+            .listRowBackground(Color.noraGlassTeal)
+            .listRowSeparatorTint(.white.opacity(0.14))
 
             Section("Appearance") {
                 Picker("Theme", selection: $appearance) {
@@ -80,6 +82,7 @@ struct SettingsView: View {
                 }
                 .pickerStyle(.segmented)
             }
+            .listRowBackground(Color.noraGlassWarm)
 
             Section("Language") {
                 Picker("Language", selection: Bindable(localization).language) {
@@ -88,17 +91,22 @@ struct SettingsView: View {
                     }
                 }
             }
+            .listRowBackground(Color.noraGlassTeal)
 
             Section("Privacy & data") {
                 NavigationLink("Privacy") { PlaceholderInfoView(title: "Privacy", text: "Nora only uses what you share to personalize your brief. Nothing is sold to third parties.") }
                 NavigationLink("Data controls") { PlaceholderInfoView(title: "Data controls", text: "Export or delete your data, or reset personalization from your Profile.") }
                 NavigationLink("Sources") { PlaceholderInfoView(title: "Sources", text: "Nora draws from market data providers, sports schedules, travel and pricing feeds, and release calendars.") }
             }
+            .listRowBackground(Color.noraGlassWarm)
+            .listRowSeparatorTint(.white.opacity(0.14))
 
             Section("Account") {
                 NavigationLink("Subscription") { PlaceholderInfoView(title: "Subscription", text: "You're on the free plan. Upgrade for real-time alerts across every topic.") }
                 NavigationLink("About") { PlaceholderInfoView(title: "About Nora", text: "Nora version 1.0 — a personal brief built around your life.") }
             }
+            .listRowBackground(Color.noraGlassTeal)
+            .listRowSeparatorTint(.white.opacity(0.14))
         }
         .scrollContentBackground(.hidden)
     }

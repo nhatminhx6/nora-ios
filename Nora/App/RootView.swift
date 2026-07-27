@@ -76,6 +76,9 @@ struct RootView: View {
             .tag(AppTab.profile)
         }
         .tint(.noraAccent)
+        .toolbarBackground(.ultraThinMaterial, for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .environment(\.colorScheme, .dark)
     }
 }
 

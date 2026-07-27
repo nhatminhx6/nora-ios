@@ -6,7 +6,8 @@ import SwiftUI
 private struct NoraScreenBackground: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .background(Color.noraBackground)
+            .background { NoraHeroBackground() }
+            .environment(\.colorScheme, .dark)
     }
 }
 
@@ -18,8 +19,12 @@ private struct NoraSurfaceCard: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding(Spacing.base)
-            .background(Color.noraSurface)
-            .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+            .background(Color.noraGlassTeal.opacity(0.70), in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+            .overlay {
+                RoundedRectangle(cornerRadius: Radius.lg, style: .continuous)
+                    .strokeBorder(.white.opacity(0.24), lineWidth: 0.8)
+            }
     }
 }
 
@@ -33,6 +38,7 @@ private struct NoraElevatedCard: ViewModifier {
             .padding(.vertical, Spacing.md)
             // Frosted glass: the atmospheric hero shows through, tinted.
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+            .background(Color.noraGlassTeal.opacity(0.66), in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
             // Top-down sheen for a glossy, lifted glass surface.
             .background(
                 LinearGradient(
@@ -72,8 +78,11 @@ private struct NoraInputFieldBackground: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding(Spacing.base)
-            .background(Color.noraSurface)
-            .clipShape(RoundedRectangle(cornerRadius: Radius.md, style: .continuous))
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: Radius.md, style: .continuous))
+            .overlay {
+                RoundedRectangle(cornerRadius: Radius.md, style: .continuous)
+                    .strokeBorder(.white.opacity(0.22), lineWidth: 0.8)
+            }
     }
 }
 

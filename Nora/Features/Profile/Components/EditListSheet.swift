@@ -26,6 +26,7 @@ struct EditListSheet: View {
                         items.remove(atOffsets: indexSet)
                     }
                 }
+                .listRowBackground(Color.noraGlassTeal)
 
                 Section {
                     HStack {
@@ -39,7 +40,11 @@ struct EditListSheet: View {
                         .disabled(newItem.trimmingCharacters(in: .whitespaces).isEmpty)
                     }
                 }
+                .listRowBackground(Color.noraGlassWarm)
             }
+            .scrollContentBackground(.hidden)
+            .background { NoraHeroBackground() }
+            .environment(\.colorScheme, .dark)
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -13,11 +13,17 @@ struct ChipView: View {
         }) {
             Text(content: title)
                 .font(.noraSupporting.weight(.medium))
-                .foregroundStyle(isSelected ? .white : Color.noraTextPrimary)
+                .foregroundStyle(.white.opacity(isSelected ? 1 : 0.90))
                 .padding(.horizontal, Spacing.base)
                 .frame(minHeight: 36)
-                .background(isSelected ? Color.noraAccent : Color.noraSurface)
-                .clipShape(Capsule())
+                .background(isSelected ? Color.noraChipSelected : Color.noraChipIdle, in: Capsule())
+                .overlay {
+                    Capsule()
+                        .strokeBorder(
+                            isSelected ? Color.noraAccentBright.opacity(0.90) : .white.opacity(0.22),
+                            lineWidth: 0.8
+                        )
+                }
         }
         .accessibilityAddTraits(isSelected ? [.isSelected] : [])
     }
