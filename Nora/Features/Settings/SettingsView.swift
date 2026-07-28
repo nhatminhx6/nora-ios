@@ -21,6 +21,7 @@ struct SettingsView: View {
     @Environment(LocalizationManager.self) private var localization
     @State private var store: SettingsStore?
     @AppStorage("nora.appearance") private var appearance: AppearanceOption = .system
+    @AppStorage("nora.background") private var appBackground: AppBackground = .rainyCity
     @State private var dailyBriefTime: Date = Calendar.current.date(from: DateComponents(hour: 8, minute: 0)) ?? .now
 
     var body: some View {
@@ -84,6 +85,12 @@ struct SettingsView: View {
             }
             .listRowBackground(Color.noraGlassWarm)
 
+            Section("Background") {
+                BackgroundPicker(selection: $appBackground)
+            }
+            .listRowInsets(EdgeInsets(top: Spacing.sm, leading: 0, bottom: Spacing.md, trailing: 0))
+            .listRowBackground(Color.clear)
+
             Section("Language") {
                 Picker("Language", selection: Bindable(localization).language) {
                     ForEach(AppLanguage.allCases) { language in
@@ -109,6 +116,61 @@ struct SettingsView: View {
             .listRowSeparatorTint(.white.opacity(0.14))
         }
         .scrollContentBackground(.hidden)
+    }
+}
+
+private struct BackgroundPicker: View {
+    @Binding var selection: AppBackground
+
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack(spacing: Spacing.md) {
+                ForEach(AppBackground.allCases) { background in
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.25)) {
+                            selection = background
+                        }
+                    } label: {
+                        VStack(alignment: .leading, spacing: Spacing.sm) {
+                            Image(background.assetName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 112, height: 148)
+                                .clipped()
+                                .overlay(alignment: .topTrailing) {
+                                    if selection == background {
+                                        Image(systemName: "checkmark.circle.fill")
+                                            .font(.system(size: 22, weight: .semibold))
+                                            .symbolRenderingMode(.palette)
+                                            .foregroundStyle(Color.noraAccent, Color.noraGlassTeal)
+                                            .padding(Spacing.sm)
+                                            .transition(.scale.combined(with: .opacity))
+                                    }
+                                }
+                                .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: Radius.lg, style: .continuous)
+                                        .stroke(
+                                            selection == background ? Color.noraAccent : .white.opacity(0.22),
+                                            lineWidth: selection == background ? 2 : 1
+                                        )
+                                }
+
+                            Text(background.title)
+                                .font(.noraSupporting)
+                                .fontWeight(selection == background ? .semibold : .regular)
+                                .foregroundStyle(selection == background ? Color.noraAccent : .white.opacity(0.82))
+                                .lineLimit(1)
+                        }
+                        .frame(width: 112, alignment: .leading)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityAddTraits(selection == background ? .isSelected : [])
+                }
+            }
+            .padding(.horizontal, Spacing.md)
+        }
+        .scrollIndicators(.hidden)
     }
 }
 

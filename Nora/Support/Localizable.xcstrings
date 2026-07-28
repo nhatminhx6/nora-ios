@@ -341,6 +341,17 @@
         }
       }
     },
+    "Background" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hình nền"
+          }
+        }
+      }
+    },
     "Balanced" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1303,6 +1314,28 @@
         }
       }
     },
+    "Misty Forest" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rừng sương"
+          }
+        }
+      }
+    },
+    "Moonlit Coast" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bờ biển trăng"
+          }
+        }
+      }
+    },
     "More feedback options" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1310,6 +1343,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm tùy chọn phản hồi"
+          }
+        }
+      }
+    },
+    "Mountain Dusk" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Núi hoàng hôn"
           }
         }
       }
@@ -1934,6 +1978,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mua sắm"
+          }
+        }
+      }
+    },
+    "Rainy City" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phố mưa"
           }
         }
       }

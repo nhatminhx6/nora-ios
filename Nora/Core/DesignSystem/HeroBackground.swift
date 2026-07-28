@@ -6,14 +6,16 @@ import SwiftUI
 /// different product.
 struct NoraHeroBackground: View {
     var intensity: Double = 1
+    @AppStorage("nora.background") private var selectedBackground: AppBackground = .rainyCity
 
     var body: some View {
         GeometryReader { proxy in
-            Image("WelcomeCity")
+            Image(selectedBackground.assetName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: proxy.size.width, height: proxy.size.height)
                 .clipped()
+                .animation(.easeInOut(duration: 0.28), value: selectedBackground)
                 .overlay {
                     LinearGradient(
                         stops: [
