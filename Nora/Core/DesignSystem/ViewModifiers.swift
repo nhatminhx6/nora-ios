@@ -33,34 +33,63 @@ private struct NoraSurfaceCard: ViewModifier {
 /// as a distinct, tappable card rather than a flat list row.
 private struct NoraElevatedCard: ViewModifier {
     func body(content: Content) -> some View {
+        let shape = RoundedRectangle(cornerRadius: Radius.lg, style: .continuous)
+
         content
             .padding(.horizontal, Spacing.base)
             .padding(.vertical, Spacing.md)
-            // Frosted glass: the atmospheric hero shows through, tinted.
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
-            .background(Color.noraGlassTeal.opacity(0.66), in: RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
-            // Top-down sheen for a glossy, lifted glass surface.
             .background(
+                shape
+                    .fill(.ultraThinMaterial)
+                    .overlay {
+                        shape.fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(red: 0.12, green: 0.34, blue: 0.37).opacity(0.90),
+                                    Color(red: 0.18, green: 0.28, blue: 0.30).opacity(0.88),
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                    }
+                    .overlay(alignment: .topTrailing) {
+                        RadialGradient(
+                            colors: [Color.noraGlow.opacity(0.16), .clear],
+                            center: .topTrailing,
+                            startRadius: 0,
+                            endRadius: 170
+                        )
+                        .clipShape(shape)
+                    }
+            )
+            .overlay(
+                shape
+                    .strokeBorder(
+                        LinearGradient(
+                            colors: [
+                                Color.white.opacity(0.62),
+                                Color.noraAccentBright.opacity(0.30),
+                                Color.white.opacity(0.10),
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ),
+                        lineWidth: 1
+                    )
+            )
+            .overlay(alignment: .top) {
                 LinearGradient(
-                    colors: [Color.white.opacity(0.22), Color.white.opacity(0.02)],
+                    colors: [.white.opacity(0.20), .clear],
                     startPoint: .top,
                     endPoint: .bottom
                 )
-                .clipShape(RoundedRectangle(cornerRadius: Radius.lg, style: .continuous))
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: Radius.lg, style: .continuous)
-                    .strokeBorder(
-                        LinearGradient(
-                            colors: [Color.white.opacity(0.5), Color.white.opacity(0.08)],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        ),
-                        lineWidth: 0.75
-                    )
-            )
-            .shadow(color: Color.noraAccent.opacity(0.10), radius: 18, y: 8)
-            .shadow(color: .black.opacity(0.08), radius: 6, y: 2)
+                .frame(height: 42)
+                .clipShape(shape)
+                .allowsHitTesting(false)
+            }
+            .shadow(color: Color.noraAccent.opacity(0.24), radius: 24, y: 12)
+            .shadow(color: .black.opacity(0.18), radius: 10, y: 5)
     }
 }
 

@@ -20,18 +20,18 @@ struct InsightRowView: View {
 
             Text(content: insight.title)
                 .font(.noraCardTitle)
-                .foregroundStyle(Color.noraTextPrimary)
+                .foregroundStyle(.white)
                 .fixedSize(horizontal: false, vertical: true)
 
             Text(content: insight.summary)
                 .font(.noraBody)
-                .foregroundStyle(Color.noraTextSecondary)
+                .foregroundStyle(.white.opacity(0.84))
                 .lineLimit(3)
                 .fixedSize(horizontal: false, vertical: true)
 
             Text(content: insight.relevanceReason)
                 .font(.noraSupporting)
-                .foregroundStyle(Color.noraTextTertiary)
+                .foregroundStyle(.white.opacity(0.68))
                 .lineLimit(2)
                 .fixedSize(horizontal: false, vertical: true)
 
@@ -52,13 +52,13 @@ struct InsightRowView: View {
                     .font(.noraEyebrow)
             }
             .labelStyle(.titleAndIcon)
-            .foregroundStyle(insight.type.tintColor)
+            .foregroundStyle(headerColor)
 
             Spacer()
 
             Text(NoraDateFormat.relativeTimestamp(insight.publishedAt, locale: locale))
                 .font(.noraCaption)
-                .foregroundStyle(Color.noraTextTertiary)
+                .foregroundStyle(.white.opacity(0.58))
         }
     }
 
@@ -66,7 +66,7 @@ struct InsightRowView: View {
         HStack(spacing: Spacing.md) {
             Label("\(insight.sourceCount) sources", systemImage: "doc.text")
                 .font(.noraCaption)
-                .foregroundStyle(Color.noraTextTertiary)
+                .foregroundStyle(.white.opacity(0.58))
                 .labelStyle(.titleAndIcon)
 
             Spacer()
@@ -77,8 +77,17 @@ struct InsightRowView: View {
                     onPrimaryAction()
                 }) {
                     Text(content: action)
+                        .font(.noraSupporting.weight(.semibold))
+                        .foregroundStyle(Color.noraAccentBright)
+                        .padding(.horizontal, Spacing.sm)
+                        .frame(minHeight: 34)
+                        .background(Color.noraGlassSelected.opacity(0.44), in: Capsule())
+                        .overlay {
+                            Capsule()
+                                .strokeBorder(Color.noraAccentBright.opacity(0.46), lineWidth: 0.7)
+                        }
                 }
-                .buttonStyle(.noraTertiary)
+                .buttonStyle(.plain)
             }
 
             feedbackMenu
@@ -103,11 +112,22 @@ struct InsightRowView: View {
                 }
             } label: {
                 Image(systemName: "ellipsis.circle")
-                    .foregroundStyle(Color.noraTextTertiary)
+                    .foregroundStyle(.white.opacity(0.62))
                     .frame(width: TouchTarget.minimum, height: TouchTarget.minimum)
                     .contentShape(Rectangle())
             }
             .accessibilityLabel("More feedback options")
+        }
+    }
+
+    private var headerColor: Color {
+        switch insight.type {
+        case .important, .actionRequired:
+            Color.noraWarning
+        case .resolved:
+            Color.noraPositive
+        case .informational, .upcoming:
+            .white.opacity(0.74)
         }
     }
 }
