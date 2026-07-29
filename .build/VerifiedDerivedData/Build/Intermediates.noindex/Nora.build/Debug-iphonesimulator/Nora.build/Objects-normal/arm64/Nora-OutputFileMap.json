@@ -1,0 +1,799 @@
+{
+  "" : {
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Nora-primary.dia",
+    "emit-module-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Nora-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Nora-primary-emit-module.dia",
+    "pch" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Nora-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Nora-primary.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/App/AppEnvironment.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppEnvironment~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/App/AppRouter.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppRouter~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/App/NoraApp.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraApp~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/App/RootView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/RootView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/AppBackground.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AppBackground~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/Buttons.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Buttons~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/ColorTokens.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ColorTokens~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/HeroBackground.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HeroBackground~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/ListRowStyle.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ListRowStyle~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/Metrics.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Metrics~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/Typography.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Typography~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/ViewModifiers.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ViewModifiers~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Localization/LocalizationManager.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LocalizationManager~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Persistence/Entities/SavedInsightEntity.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightEntity~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Persistence/Entities/TopicEntity.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicEntity~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Persistence/Entities/UserProfileEntity.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfileEntity~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Persistence/NoraModelContainer.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NoraModelContainer~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Utilities/DateFormatting.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DateFormatting~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Utilities/HapticsManager.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/HapticsManager~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/Brief.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Brief~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/ConversationMessage.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ConversationMessage~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/Insight.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Insight~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/Topic.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/Topic~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/UserProfile.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UserProfile~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Repositories/ProfileRepository.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileRepository~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Repositories/SavedInsightRepository.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SavedInsightRepository~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Repositories/TopicRepository.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRepository~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/AssistantService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/BriefService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/BriefService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/CalendarService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/NotificationService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/ProfileService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/TopicService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicService~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/AssistantStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/AssistantView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/Components/AssistantComposerView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AssistantComposerView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/Components/ExtractedContextCard.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ExtractedContextCard~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/Components/MessageRowView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/MessageRowView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Assistant/Components/QuickActionsBar.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/QuickActionsBar~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Following/Components/AddTopicSheet.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/AddTopicSheet~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Following/Components/TopicRowView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicRowView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Following/FollowingStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Following/FollowingView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FollowingView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/OnboardingScaffold.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingScaffold~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/OnboardingStep.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStep~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/OnboardingStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/OnboardingView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/InvestmentsStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InvestmentsStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/NotificationPreferenceStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/NotificationPreferenceStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/PlansStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PlansStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/ReviewStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ReviewStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/WelcomeStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WelcomeStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Onboarding/Steps/WorkInterestsStepView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/WorkInterestsStepView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/Components/EditListSheet.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/Components/ProfileSectionRow.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileSectionRow~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/Components/UnderstandingSummaryCard.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UnderstandingSummaryCard~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/ProfileStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/ProfileView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ProfileView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Settings/CalendarSetupView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarSetupView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Settings/SettingsStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/DailyReflectionCard.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/InsightSectionView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightSectionView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/TodayHeaderView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayHeaderView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/UpcomingSectionView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/UpcomingSectionView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/TodayStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/TodayView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/TodayViewState.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TodayViewState~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/TopicDetail/TopicDetailStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailStore~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/TopicDetail/TopicDetailView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/TopicDetailView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/ChipView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/EmptyStateView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EmptyStateView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/ErrorStateView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ErrorStateView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/FlowLayout.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/FlowLayout~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/InsightRowView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/InsightRowView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/LoadingSkeletonView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/LoadingSkeletonView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/SectionHeaderView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/SectionHeaderView~partial.swiftmodule"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/PreviewData/PreviewData.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.dia",
+    "index-unit-output-path" : "/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.o",
+    "llvm-bc" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.bc",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData.swiftdeps",
+    "swiftmodule" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/PreviewData~partial.swiftmodule"
+  }
+}

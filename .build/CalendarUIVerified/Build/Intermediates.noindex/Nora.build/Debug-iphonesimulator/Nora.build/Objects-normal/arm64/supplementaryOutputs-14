@@ -1,0 +1,37 @@
+{
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Calendar/CalendarStore.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarStore.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarStore.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarStore.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarStore.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarStore.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Calendar/CalendarView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarView.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/CalendarView.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/Components/EditListSheet.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/EditListSheet.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/DailyReflectionCard.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/ChipView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarUIVerified/Build/Intermediates.noindex/Nora.build/Debug-iphonesimulator/Nora.build/Objects-normal/arm64/ChipView.swiftdeps"
+  }
+}

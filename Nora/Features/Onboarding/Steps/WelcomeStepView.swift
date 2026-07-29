@@ -11,7 +11,7 @@ struct WelcomeStepView: View {
     @State private var hasAppeared = false
 
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack {
             background
 
             ScrollView {
@@ -24,13 +24,9 @@ struct WelcomeStepView: View {
                 }
                 .padding(.horizontal, Spacing.lg)
                 .padding(.top, Spacing.sm)
-                .padding(.bottom, 116)
+                .padding(.bottom, Spacing.xxl)
             }
             .scrollIndicators(.hidden)
-
-            bottomDock
-                .padding(.horizontal, Spacing.lg)
-                .padding(.bottom, Spacing.sm)
         }
         .environment(\.colorScheme, .dark)
         .task {
@@ -97,7 +93,20 @@ struct WelcomeStepView: View {
             Text("Nora")
                 .font(.system(size: 44, weight: .bold, design: .rounded))
                 .tracking(-1.6)
-                .foregroundStyle(Color(red: 0.02, green: 0.12, blue: 0.15))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [
+                            Color(red: 0.18, green: 0.90, blue: 0.91),
+                            Color(red: 0.26, green: 0.55, blue: 1.00),
+                            Color(red: 0.75, green: 0.32, blue: 0.98),
+                            Color(red: 1.00, green: 0.42, blue: 0.62),
+                            Color(red: 1.00, green: 0.72, blue: 0.30),
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
+                .shadow(color: Color.noraAccent.opacity(0.30), radius: 12, y: 5)
 
             Text("Welcome")
                 .font(.system(size: welcomeSize, weight: .bold))
@@ -174,21 +183,6 @@ struct WelcomeStepView: View {
             .padding(.top, Spacing.sm)
     }
 
-    private var bottomDock: some View {
-        HStack(spacing: Spacing.sm) {
-            WelcomeDockItem(symbol: "sun.max.fill", title: "Today", isSelected: false)
-            WelcomeDockItem(symbol: "bubble.left.and.text.bubble.right.fill", title: "Assistant", isSelected: false)
-            WelcomeDockItem(symbol: "eye.fill", title: "Following", isSelected: true)
-            WelcomeDockItem(symbol: "person.crop.circle.fill", title: "Profile", isSelected: false)
-        }
-        .padding(Spacing.sm)
-        .background(Color.noraGlassTeal.opacity(0.88), in: RoundedRectangle(cornerRadius: Radius.xl, style: .continuous))
-        .overlay {
-            RoundedRectangle(cornerRadius: Radius.xl, style: .continuous)
-                .strokeBorder(.white.opacity(0.26), lineWidth: 0.8)
-        }
-        .shadow(color: .black.opacity(0.28), radius: 24, y: 12)
-    }
 }
 
 private struct WelcomePrimaryButtonStyle: ButtonStyle {
@@ -278,30 +272,6 @@ private struct WelcomeHighlight: View {
                 )
         }
         .shadow(color: .black.opacity(0.22), radius: 16, y: 8)
-    }
-}
-
-private struct WelcomeDockItem: View {
-    let symbol: String
-    let title: LocalizedStringKey
-    let isSelected: Bool
-
-    var body: some View {
-        VStack(spacing: 5) {
-            Image(systemName: symbol)
-                .font(.system(size: 16, weight: .semibold))
-            Text(title)
-                .font(.system(size: 9, weight: .semibold))
-                .lineLimit(1)
-                .minimumScaleFactor(0.75)
-        }
-        .foregroundStyle(isSelected ? Color(red: 0.03, green: 0.25, blue: 0.29) : .white.opacity(0.82))
-        .frame(maxWidth: .infinity, minHeight: 58)
-        .background(
-            isSelected ? Color.noraChipSelected : Color.noraChipIdle.opacity(0.78),
-            in: RoundedRectangle(cornerRadius: Radius.md, style: .continuous)
-        )
-        .accessibilityElement(children: .combine)
     }
 }
 

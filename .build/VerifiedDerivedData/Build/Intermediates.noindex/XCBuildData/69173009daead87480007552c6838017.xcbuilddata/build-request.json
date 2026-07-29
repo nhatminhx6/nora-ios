@@ -1,0 +1,64 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "167319672e10386dc8949eff5f750ebce054d47aaab15d60c166b471db87a5fa"
+    }
+  ],
+  "containerPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/Nora.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator26.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "i386",
+        "x86_64"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Products",
+      "derivedDataPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData",
+      "indexDataStoreFolderPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/VerifiedDerivedData/Build/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

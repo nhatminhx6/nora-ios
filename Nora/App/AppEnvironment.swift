@@ -16,6 +16,7 @@ final class AppEnvironment {
     let profileRepository: ProfileRepository
     let topicRepository: TopicRepository
     let savedInsightRepository: SavedInsightRepository
+    let calendarEventRepository: CalendarEventRepository
 
     let localization: LocalizationManager
 
@@ -26,11 +27,12 @@ final class AppEnvironment {
         self.topicService = MockTopicService()
         self.briefService = MockBriefService()
         self.assistantService = MockAssistantService()
-        self.notificationService = MockNotificationService()
+        self.notificationService = LiveNotificationService()
 
         self.profileRepository = ProfileRepository(modelContext: modelContext)
         self.topicRepository = TopicRepository(modelContext: modelContext)
         self.savedInsightRepository = SavedInsightRepository(modelContext: modelContext)
+        self.calendarEventRepository = CalendarEventRepository(modelContext: modelContext)
 
         try? topicRepository.seedIfNeeded(with: PreviewData.allTopics)
     }

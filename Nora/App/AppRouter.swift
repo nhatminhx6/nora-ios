@@ -1,10 +1,11 @@
 import SwiftUI
 
-/// The four top-level destinations. Order here defines tab order.
+/// The top-level destinations. Order here defines tab order.
 enum AppTab: Int, CaseIterable, Identifiable, Hashable {
     case today
     case assistant
     case following
+    case calendar
     case profile
 
     var id: Int { rawValue }
@@ -14,6 +15,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
         case .today: "Today"
         case .assistant: "Assistant"
         case .following: "Following"
+        case .calendar: "Calendar"
         case .profile: "Profile"
         }
     }
@@ -23,6 +25,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
         case .today: "sun.max"
         case .assistant: "bubble.left.and.text.bubble.right"
         case .following: "eye"
+        case .calendar: "calendar"
         case .profile: "person.crop.circle"
         }
     }

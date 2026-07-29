@@ -1,0 +1,72 @@
+{
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/Buttons.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/Buttons.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/Buttons.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/Buttons.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/Buttons.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/Buttons.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/DesignSystem/ColorTokens.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ColorTokens.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ColorTokens.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ColorTokens.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ColorTokens.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ColorTokens.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Core/Utilities/DateFormatting.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DateFormatting.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DateFormatting.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DateFormatting.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DateFormatting.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DateFormatting.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Models/ConversationMessage.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ConversationMessage.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ConversationMessage.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ConversationMessage.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ConversationMessage.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ConversationMessage.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Domain/Services/CalendarService.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarService.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarService.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarService.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarService.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarService.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Profile/Components/EditListSheet.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EditListSheet.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EditListSheet.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EditListSheet.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EditListSheet.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EditListSheet.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Settings/CalendarSetupView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarSetupView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarSetupView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarSetupView.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarSetupView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/CalendarSetupView.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Features/Today/Components/DailyReflectionCard.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DailyReflectionCard.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DailyReflectionCard.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DailyReflectionCard.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/DailyReflectionCard.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/ChipView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ChipView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ChipView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ChipView.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ChipView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/ChipView.swiftdeps"
+  },
+  "/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Shared/Components/EmptyStateView.swift" : {
+    "const-values" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EmptyStateView.swiftconstvalues",
+    "dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EmptyStateView.d",
+    "diagnostics" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EmptyStateView.dia",
+    "object" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EmptyStateView.o",
+    "swift-dependencies" : "/Users/nhatminh/Data/Products/nora/nora-ios/.build/CalendarDerivedData/Build/Intermediates.noindex/Nora.build/Debug-iphoneos/Nora.build/Objects-normal/arm64/EmptyStateView.swiftdeps"
+  }
+}

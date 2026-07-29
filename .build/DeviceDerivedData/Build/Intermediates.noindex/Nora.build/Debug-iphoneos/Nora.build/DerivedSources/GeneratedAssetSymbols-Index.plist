@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Support/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMistyForest</string>
+			<key>relativePath</key>
+			<string>./MistyForest.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mistyForest</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Support/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMoonlitCoast</string>
+			<key>relativePath</key>
+			<string>./MoonlitCoast.imageset</string>
+			<key>swiftSymbol</key>
+			<string>moonlitCoast</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Support/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameMountainDusk</string>
+			<key>relativePath</key>
+			<string>./MountainDusk.imageset</string>
+			<key>swiftSymbol</key>
+			<string>mountainDusk</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/nhatminh/Data/Products/nora/nora-ios/Nora/Support/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWelcomeCity</string>
+			<key>relativePath</key>
+			<string>./WelcomeCity.imageset</string>
+			<key>swiftSymbol</key>
+			<string>welcomeCity</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

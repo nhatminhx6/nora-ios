@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld sources</key>
+	<string>%lld nguồn</string>
+	<key>%lldh ago</key>
+	<string>%lld giờ trước</string>
+	<key>%lldm ago</key>
+	<string>%lld phút trước</string>
+	<key>1 JPY now buys about 4% less VND than last month — a good moment to exchange money for your trip.</key>
+	<string>1 JPY hiện đổi được ít VND hơn khoảng 4% so với tháng trước — thời điểm tốt để đổi tiền cho chuyến đi.</string>
+	<key>2.0L Premium</key>
+	<string>Bản 2.0L Premium</string>
+	<key>2.5L AWD</key>
+	<string>Bản 2.5L AWD</string>
+	<key>3 things worth your attention today.</key>
+	<string>3 điều đáng chú ý hôm nay.</string>
+	<key>A bit much</key>
+	<string>Hơi nhiều</string>
+	<key>A company you follow</key>
+	<string>Một công ty anh theo dõi</string>
+	<key>A personal brief built around your life.</key>
+	<string>Bản tin cá nhân xoay quanh cuộc sống của anh.</string>
+	<key>A skill you are learning</key>
+	<string>Một kỹ năng anh đang học</string>
+	<key>A team you support</key>
+	<string>Một đội bóng anh cổ vũ</string>
+	<key>A trip you are planning</key>
+	<string>Một chuyến đi anh đang lên kế hoạch</string>
+	<key>A trip, a purchase, or a goal on the horizon.</key>
+	<string>Một chuyến đi, một khoản mua sắm, hay một mục tiêu sắp tới.</string>
+	<key>About</key>
+	<string>Giới thiệu</string>
+	<key>About Nora</key>
+	<string>Về Nora</string>
+	<key>Account</key>
+	<string>Tài khoản</string>
+	<key>Action required</key>
+	<string>Cần hành động</string>
+	<key>Active</key>
+	<string>Chủ động</string>
+	<key>Add</key>
+	<string>Thêm</string>
+	<key>Add context</key>
+	<string>Thêm ngữ cảnh</string>
+	<key>Add new</key>
+	<string>Thêm mới</string>
+	<key>Add topic</key>
+	<string>Thêm chủ đề</string>
+	<key>Adjust in your own words</key>
+	<string>Điều chỉnh theo cách của anh</string>
+	<key>Adjust notifications</key>
+	<string>Điều chỉnh thông báo</string>
+	<key>And the topics you care about — Nora will use these as a starting point.</key>
+	<string>Và những chủ đề anh quan tâm — Nora sẽ dùng đây làm điểm bắt đầu.</string>
+	<key>Any big plans coming up?</key>
+	<string>Anh đang có kế hoạch lớn nào?</string>
+	<key>Appearance</key>
+	<string>Giao diện</string>
+	<key>Apple introduced an expanded `Layout` protocol for finer control over custom containers, useful for complex components.</key>
+	<string>Apple giới thiệu `Layout` protocol mở rộng cho phép kiểm soát container tùy biến tốt hơn, hữu ích cho các component phức tạp.</string>
+	<key>Assistant</key>
+	<string>Trợ lý</string>
+	<key>Back</key>
+	<string>Quay lại</string>
+	<key>Background</key>
+	<string>Hình nền</string>
+	<key>Balanced</key>
+	<string>Cân bằng</string>
+	<key>Bank stocks</key>
+	<string>Cổ phiếu ngân hàng</string>
+	<key>Behavior</key>
+	<string>Hành vi</string>
+	<key>Breaking changes</key>
+	<string>Thay đổi phá vỡ tương thích</string>
+	<key>Built around you</key>
+	<string>Xây dựng quanh cuộc sống của anh</string>
+	<key>Buy a new car</key>
+	<string>Mua xe mới</string>
+	<key>Buy a new car in the next 6 months</key>
+	<string>Mua xe mới trong 6 tháng tới</string>
+	<key>Cancel</key>
+	<string>Hủy</string>
+	<key>Category</key>
+	<string>Danh mục</string>
+	<key>Change jobs</key>
+	<string>Đổi công việc</string>
+	<key>Check your connection and try again.</key>
+	<string>Anh kiểm tra kết nối rồi thử lại nhé.</string>
+	<key>Compare trims</key>
+	<string>So sánh các phiên bản</string>
+	<key>Considering</key>
+	<string>Đang cân nhắc</string>
+	<key>Continue</key>
+	<string>Tiếp tục</string>
+	<key>Cooking</key>
+	<string>Nấu ăn</string>
+	<key>Correct something</key>
+	<string>Sửa thông tin</string>
+	<key>Daily brief time</key>
+	<string>Giờ tóm tắt hằng ngày</string>
+	<key>Dark</key>
+	<string>Tối</string>
+	<key>Data controls</key>
+	<string>Kiểm soát dữ liệu</string>
+	<key>Dealers are covering 50% of the registration fee on 2.0L trims through the end of next month.</key>
+	<string>Đại lý áp dụng ưu đãi 50% lệ phí trước bạ cho các phiên bản 2.0L đến hết tháng sau.</string>
+	<key>Delete</key>
+	<string>Xóa</string>
+	<key>Dividends</key>
+	<string>Cổ tức</string>
+	<key>Earnings results</key>
+	<string>Kết quả kinh doanh</string>
+	<key>Edit</key>
+	<string>Sửa</string>
+	<key>Entertainment</key>
+	<string>Giải trí</string>
+	<key>Example: "Only alert me when something is truly serious."</key>
+	<string>Ví dụ: "Chỉ báo tôi khi có thông tin thực sự nghiêm trọng."</string>
+	<key>Export or delete your data, or reset personalization from your Profile.</key>
+	<string>Xuất hoặc xóa dữ liệu, hoặc đặt lại cá nhân hóa trong mục Hồ sơ.</string>
+	<key>Favorite</key>
+	<string>Yêu thích</string>
+	<key>Filter</key>
+	<string>Bộ lọc</string>
+	<key>Flight prices</key>
+	<string>Giá vé máy bay</string>
+	<key>Following</key>
+	<string>Đang theo dõi</string>
+	<key>For example: iOS Developer</key>
+	<string>Ví dụ: iOS Developer</string>
+	<key>Get started</key>
+	<string>Bắt đầu</string>
+	<key>Good afternoon</key>
+	<string>Chào buổi chiều</string>
+	<key>Good evening</key>
+	<string>Chào buổi tối</string>
+	<key>Good morning</key>
+	<string>Chào buổi sáng</string>
+	<key>Got it — I've noted your purchase intent.</key>
+	<string>Đã ghi nhận ý định mua xe của anh.</string>
+	<key>Got it. Nora will keep watching and flag anything worth your attention.</key>
+	<string>Đã ghi nhận. Nora sẽ tiếp tục theo dõi và báo lại khi có điều đáng chú ý.</string>
+	<key>Health</key>
+	<string>Sức khỏe</string>
+	<key>Here's what Nora understands</key>
+	<string>Nora đã hiểu được điều này</string>
+	<key>High priority</key>
+	<string>Ưu tiên cao</string>
+	<key>Holding</key>
+	<string>Đang nắm giữ</string>
+	<key>How Nora understands you</key>
+	<string>Nora hiểu anh thế nào</string>
+	<key>How your data is used</key>
+	<string>Dữ liệu của anh được dùng thế nào</string>
+	<key>Important alerts</key>
+	<string>Cảnh báo quan trọng</string>
+	<key>Important updates as they happen, the rest in your brief.</key>
+	<string>Cập nhật quan trọng ngay khi xảy ra, phần còn lại trong bản tóm tắt.</string>
+	<key>In %lldd</key>
+	<string>Còn %lld ngày</string>
+	<key>In %lldh</key>
+	<string>Còn %lld giờ</string>
+	<key>In %lldm</key>
+	<string>Còn %lld phút</string>
+	<key>Include in daily brief</key>
+	<string>Gộp vào tóm tắt hằng ngày</string>
+	<key>Intensity</key>
+	<string>Mức độ</string>
+	<key>Interests</key>
+	<string>Sở thích</string>
+	<key>Investments</key>
+	<string>Đầu tư</string>
+	<key>Is today's brief too much?</key>
+	<string>Nội dung hôm nay có quá nhiều không?</string>
+	<key>JPY exchange rate</key>
+	<string>Tỷ giá JPY</string>
+	<key>JPY falls to a 3-month low</key>
+	<string>Tỷ giá JPY giảm xuống mức thấp nhất 3 tháng</string>
+	<key>Japan trip</key>
+	<string>Chuyến đi Nhật</string>
+	<key>Just now</key>
+	<string>Vừa xong</string>
+	<key>Just right</key>
+	<string>Vừa đủ</string>
+	<key>Keep as is</key>
+	<string>Giữ như cũ</string>
+	<key>Kickoff at Anfield, 23:30. Liverpool are unbeaten in their last 6 league games.</key>
+	<string>Trận đấu tại Anfield, 23:30. Liverpool đang bất bại 6 trận gần nhất tại giải.</string>
+	<key>Language</key>
+	<string>Ngôn ngữ</string>
+	<key>Leadership changes</key>
+	<string>Thay đổi lãnh đạo</string>
+	<key>Learn a new skill</key>
+	<string>Học kỹ năng mới</string>
+	<key>Learning</key>
+	<string>Đang học</string>
+	<key>Light</key>
+	<string>Sáng</string>
+	<key>Liverpool face Manchester City tonight</key>
+	<string>Liverpool gặp Manchester City tối nay</string>
+	<key>Liverpool is your favorite club, so Nora rolls match schedules and results into your daily brief.</key>
+	<string>Anh theo dõi Liverpool như đội bóng yêu thích, nên Nora gom lịch thi đấu và kết quả vào bản tóm tắt hằng ngày.</string>
+	<key>Liverpool is your favorite club.</key>
+	<string>Anh theo dõi Liverpool như đội bóng yêu thích.</string>
+	<key>Low priority</key>
+	<string>Ưu tiên thấp</string>
+	<key>Match schedule</key>
+	<string>Lịch thi đấu</string>
+	<key>Mazda CX-5 registration-fee promotion</key>
+	<string>Mazda CX-5 có chương trình ưu đãi lệ phí trước bạ</string>
+	<key>Message Nora…</key>
+	<string>Nhắn cho Nora…</string>
+	<key>Minimal</key>
+	<string>Tối giản</string>
+	<key>Misty Forest</key>
+	<string>Rừng sương</string>
+	<key>Moonlit Coast</key>
+	<string>Bờ biển trăng</string>
+	<key>More feedback options</key>
+	<string>Thêm tùy chọn phản hồi</string>
+	<key>Mountain Dusk</key>
+	<string>Núi hoàng hôn</string>
+	<key>Mute %@</key>
+	<string>Tắt %@</string>
+	<key>Muted</key>
+	<string>Đã tắt</string>
+	<key>Name</key>
+	<string>Tên</string>
+	<key>Needs attention</key>
+	<string>Cần chú ý</string>
+	<key>New API for custom container views in SwiftUI</key>
+	<string>API mới cho custom container views trong SwiftUI</string>
+	<key>New APIs</key>
+	<string>API mới</string>
+	<key>New model year</key>
+	<string>Đời xe mới</string>
+	<key>New movie premiere</key>
+	<string>Khởi chiếu phim mới</string>
+	<key>New releases</key>
+	<string>Phát hành mới</string>
+	<key>New sci-fi trailer just dropped</key>
+	<string>Trailer phim khoa học viễn tưởng mới vừa ra mắt</string>
+	<key>Noise, filtered</key>
+	<string>Nhiễu đã được lọc</string>
+	<key>Nora doesn't know enough about you yet.</key>
+	<string>Nora chưa có đủ thông tin về anh.</string>
+	<key>Nora draws from market data providers, sports schedules, travel and pricing feeds, and release calendars.</key>
+	<string>Nora lấy dữ liệu từ nhà cung cấp thị trường, lịch thể thao, nguồn du lịch và giá cả, cùng lịch phát hành.</string>
+	<key>Nora is typing…</key>
+	<string>Nora đang soạn…</string>
+	<key>Nora learns what matters to you, follows it, and only speaks up when something is worth your attention.</key>
+	<string>Nora tìm hiểu điều gì quan trọng với anh, theo dõi nó, và chỉ lên tiếng khi có điều đáng để anh chú ý.</string>
+	<key>Nora only uses what you share to personalize your brief. Nothing is sold to third parties.</key>
+	<string>Nora chỉ dùng những gì anh chia sẻ để cá nhân hóa bản tóm tắt. Không bán cho bên thứ ba.</string>
+	<key>Nora version 1.0 — a personal brief built around your life.</key>
+	<string>Nora phiên bản 1.0 — bản tin cá nhân xoay quanh cuộc sống của anh.</string>
+	<key>Nora watches in the background and surfaces only what changes something for you.</key>
+	<string>Nora âm thầm theo dõi và chỉ đưa lên những thay đổi thực sự liên quan đến anh.</string>
+	<key>Nora will explain the reason once it has enough information.</key>
+	<string>Nora sẽ giải thích lý do khi có đủ thông tin.</string>
+	<key>Nora will learn more about you through your conversations.</key>
+	<string>Nora sẽ tìm hiểu thêm về anh qua các cuộc trò chuyện tiếp theo.</string>
+	<key>Nora will respect this choice — you can change it anytime in Profile.</key>
+	<string>Nora sẽ tôn trọng lựa chọn này — anh có thể đổi lại bất cứ lúc nào trong Hồ sơ.</string>
+	<key>Nora will track earnings, prices, and related news.</key>
+	<string>Nora sẽ theo dõi kết quả kinh doanh, giá và tin tức liên quan.</string>
+	<key>Not anymore</key>
+	<string>Không nữa</string>
+	<key>Not relevant</key>
+	<string>Không liên quan</string>
+	<key>Not set yet</key>
+	<string>Chưa thiết lập</string>
+	<key>Not sure yet</key>
+	<string>Chưa chắc chắn</string>
+	<key>Noted</key>
+	<string>Đã ghi nhận</string>
+	<key>Nothing needs you right now.</key>
+	<string>Không có gì cần anh xử lý ngay.</string>
+	<key>Nothing needs your attention right now.</key>
+	<string>Hiện chưa có gì cần anh chú ý.</string>
+	<key>Nothing tracked yet</key>
+	<string>Chưa theo dõi gì</string>
+	<key>Notification:</key>
+	<string>Thông báo:</string>
+	<key>Notifications</key>
+	<string>Thông báo</string>
+	<key>Notify immediately</key>
+	<string>Báo ngay</string>
+	<key>Now</key>
+	<string>Bây giờ</string>
+	<key>OCB reports Q2 earnings</key>
+	<string>OCB công bố kết quả kinh doanh quý 2</string>
+	<key>Only the most important updates, saved for your daily brief.</key>
+	<string>Chỉ những cập nhật quan trọng nhất, gộp vào tóm tắt hằng ngày.</string>
+	<key>Or describe your plan</key>
+	<string>Hoặc mô tả kế hoạch của anh</string>
+	<key>Or type another name, e.g. OCB</key>
+	<string>Hoặc nhập tên khác, ví dụ: OCB</string>
+	<key>Other</key>
+	<string>Khác</string>
+	<key>Ownership costs</key>
+	<string>Chi phí sở hữu</string>
+	<key>Pause</key>
+	<string>Tạm dừng</string>
+	<key>Personalized</key>
+	<string>Cá nhân hóa</string>
+	<key>Photography</key>
+	<string>Nhiếp ảnh</string>
+	<key>Planning</key>
+	<string>Đang lên kế hoạch</string>
+	<key>Planning to buy within 6 months</key>
+	<string>Dự kiến mua trong 6 tháng</string>
+	<key>Plans</key>
+	<string>Kế hoạch</string>
+	<key>Pre-tax profit rose 18% year over year, beating analyst expectations. Non-performing loans dipped slightly.</key>
+	<string>Lợi nhuận trước thuế tăng 18% so với cùng kỳ, vượt kỳ vọng của giới phân tích. Tỷ lệ nợ xấu giảm nhẹ.</string>
+	<key>Price changes</key>
+	<string>Thay đổi giá</string>
+	<key>Priority</key>
+	<string>Độ ưu tiên</string>
+	<key>Privacy</key>
+	<string>Quyền riêng tư</string>
+	<key>Privacy &amp; data</key>
+	<string>Quyền riêng tư &amp; dữ liệu</string>
+	<key>Private by design</key>
+	<string>Riêng tư từ nền tảng</string>
+	<key>Profile</key>
+	<string>Hồ sơ</string>
+	<key>Promotions</key>
+	<string>Khuyến mãi</string>
+	<key>Purchases</key>
+	<string>Mua sắm</string>
+	<key>Rainy City</key>
+	<string>Phố mưa</string>
+	<key>Real estate</key>
+	<string>Bất động sản</string>
+	<key>Recent insight</key>
+	<string>Thông tin gần đây</string>
+	<key>Regulatory news</key>
+	<string>Tin tức pháp lý</string>
+	<key>Relationship</key>
+	<string>Mối quan hệ</string>
+	<key>Reset personalization</key>
+	<string>Đặt lại cá nhân hóa</string>
+	<key>Resolved</key>
+	<string>Đã xong</string>
+	<key>Results</key>
+	<string>Kết quả</string>
+	<key>Resume</key>
+	<string>Tiếp tục</string>
+	<key>Save</key>
+	<string>Lưu</string>
+	<key>Saved</key>
+	<string>Đã lưu</string>
+	<key>Savings</key>
+	<string>Tiết kiệm</string>
+	<key>Sci-fi movies</key>
+	<string>Phim khoa học viễn tưởng</string>
+	<key>Search topics</key>
+	<string>Tìm chủ đề</string>
+	<key>Send message</key>
+	<string>Gửi tin nhắn</string>
+	<key>Setting up…</key>
+	<string>Đang thiết lập…</string>
+	<key>Settings</key>
+	<string>Cài đặt</string>
+	<key>Should tech news outrank job news?</key>
+	<string>Nên ưu tiên tin công nghệ hơn tin tuyển dụng?</string>
+	<key>Skip</key>
+	<string>Bỏ qua</string>
+	<key>Sources</key>
+	<string>Nguồn</string>
+	<key>Sports</key>
+	<string>Thể thao</string>
+	<key>Standard</key>
+	<string>Tiêu chuẩn</string>
+	<key>Start using Nora</key>
+	<string>Bắt đầu dùng Nora</string>
+	<key>Start with something already on your mind.</key>
+	<string>Bắt đầu với điều gì đó anh đang quan tâm.</string>
+	<key>Still am</key>
+	<string>Còn</string>
+	<key>Still interested in sci-fi movies?</key>
+	<string>Anh còn quan tâm phim khoa học viễn tưởng không?</string>
+	<key>Subscription</key>
+	<string>Gói đăng ký</string>
+	<key>Summarize this week</key>
+	<string>Tóm tắt tuần này</string>
+	<key>System</key>
+	<string>Hệ thống</string>
+	<key>Tell Nora about your work, plans, or something you're considering.</key>
+	<string>Kể cho Nora nghe về công việc, kế hoạch, hoặc điều anh đang cân nhắc.</string>
+	<key>Tell Nora what you want</key>
+	<string>Nói cho Nora biết điều anh muốn</string>
+	<key>Tell me as soon as something worth knowing shows up.</key>
+	<string>Báo ngay khi có điều đáng biết.</string>
+	<key>Thanks</key>
+	<string>Cảm ơn</string>
+	<key>Thanks for your feedback.</key>
+	<string>Cảm ơn anh đã phản hồi.</string>
+	<key>The studio released the first trailer, with a release expected later this year.</key>
+	<string>Studio vừa công bố trailer đầu tiên, dự kiến khởi chiếu cuối năm nay.</string>
+	<key>Theme</key>
+	<string>Chủ đề</string>
+	<key>Today</key>
+	<string>Hôm nay</string>
+	<key>Today's brief could not be refreshed.</key>
+	<string>Không thể làm mới bản tin hôm nay.</string>
+	<key>Tomorrow</key>
+	<string>Ngày mai</string>
+	<key>Topics you're interested in</key>
+	<string>Chủ đề quan tâm</string>
+	<key>Track a new topic</key>
+	<string>Theo dõi chủ đề mới</string>
+	<key>Track something else</key>
+	<string>Theo dõi thêm gì đó khác</string>
+	<key>Tracking price, promotions, new trims, and ownership costs</key>
+	<string>Theo dõi giá, khuyến mãi, phiên bản mới và chi phí sử dụng</string>
+	<key>Trailers</key>
+	<string>Trailer</string>
+	<key>Transfer news</key>
+	<string>Tin chuyển nhượng</string>
+	<key>Travel</key>
+	<string>Du lịch</string>
+	<key>Trip to Japan</key>
+	<string>Chuyến đi Nhật Bản</string>
+	<key>Trip to Japan in the fall</key>
+	<string>Chuyến đi Nhật vào mùa thu</string>
+	<key>Try again</key>
+	<string>Thử lại</string>
+	<key>Upcoming</key>
+	<string>Sắp tới</string>
+	<key>Useful</key>
+	<string>Hữu ích</string>
+	<key>View full report</key>
+	<string>Xem báo cáo chi tiết</string>
+	<key>WWDC sessions</key>
+	<string>Phiên WWDC</string>
+	<key>We're still watching the things you care about.</key>
+	<string>Nora vẫn đang theo dõi những điều anh quan tâm.</string>
+	<key>Weather</key>
+	<string>Thời tiết</string>
+	<key>Welcome</key>
+	<string>Chào mừng</string>
+	<key>What Nora is tracking</key>
+	<string>Nora đang theo dõi gì</string>
+	<key>What are you investing in or keeping an eye on?</key>
+	<string>Anh đang đầu tư hoặc theo dõi tài sản nào?</string>
+	<key>What do you do for work?</key>
+	<string>Công việc hiện tại của anh là gì?</string>
+	<key>What should Nora notify you about right away?</key>
+	<string>Điều gì anh muốn được thông báo ngay?</string>
+	<key>What's on your mind?</key>
+	<string>Anh đang nghĩ gì?</string>
+	<key>Which trim are you interested in?</key>
+	<string>Anh đang quan tâm phiên bản nào?</string>
+	<key>Why this matters to you</key>
+	<string>Vì sao điều này quan trọng với anh</string>
+	<key>Work</key>
+	<string>Công việc</string>
+	<key>Work, investments, interests and plans — understood as one connected life.</key>
+	<string>Công việc, đầu tư, sở thích và kế hoạch — được hiểu trong cùng một cuộc sống.</string>
+	<key>Worth knowing</key>
+	<string>Đáng biết</string>
+	<key>Yes, do that</key>
+	<string>Đúng vậy</string>
+	<key>Yesterday</key>
+	<string>Hôm qua</string>
+	<key>You can adjust this anytime in Profile.</key>
+	<string>Anh có thể điều chỉnh bất cứ lúc nào trong Hồ sơ.</string>
+	<key>You hold OCB as a mid-term position, so Nora prioritizes earnings, leadership changes, dividends, and regulatory news.</key>
+	<string>Anh đang nắm giữ OCB theo chiến lược trung hạn, vì vậy Nora ưu tiên kết quả kinh doanh, thay đổi lãnh đạo, cổ tức và thông tin từ cơ quan quản lý.</string>
+	<key>You hold OCB — this directly affects your investment.</key>
+	<string>Anh đang nắm giữ OCB — đây là thông tin ảnh hưởng trực tiếp đến khoản đầu tư của anh.</string>
+	<key>You love sci-fi films, so Nora rolls new releases into your brief.</key>
+	<string>Anh thích phim khoa học viễn tưởng, nên Nora gom các phim mới ra mắt vào bản tóm tắt.</string>
+	<key>You love the sci-fi genre.</key>
+	<string>Anh thích thể loại phim khoa học viễn tưởng.</string>
+	<key>You work as an iOS Developer and follow SwiftUI, so Nora prioritizes new APIs and changes that could affect your work.</key>
+	<string>Anh làm iOS Developer và đang theo dõi SwiftUI, nên Nora ưu tiên API mới và thay đổi có thể ảnh hưởng đến công việc.</string>
+	<key>You're a %@</key>
+	<string>Anh làm %@</string>
+	<key>You're an iOS Developer following SwiftUI to stay current at work.</key>
+	<string>Anh đang làm iOS Developer và theo dõi SwiftUI để cập nhật công việc.</string>
+	<key>You're considering a Mazda CX-5 in the next 6 months, so Nora tracks pricing, promotions, and new model years.</key>
+	<string>Anh đang cân nhắc mua Mazda CX-5 trong 6 tháng tới, nên Nora theo dõi giá, khuyến mãi và phiên bản mới.</string>
+	<key>You're considering a Mazda CX-5 in the next 6 months.</key>
+	<string>Anh đang cân nhắc mua Mazda CX-5 trong 6 tháng tới.</string>
+	<key>You're on the free plan. Upgrade for real-time alerts across every topic.</key>
+	<string>Anh đang dùng gói miễn phí. Nâng cấp để nhận cảnh báo tức thời cho mọi chủ đề.</string>
+	<key>You're planning a trip to Japan, so Nora tracks the exchange rate, weather, and flight prices.</key>
+	<string>Anh đang lên kế hoạch đi Nhật, nên Nora theo dõi tỷ giá, thời tiết và giá vé máy bay.</string>
+	<key>You're planning a trip to Japan, so exchange-rate moves affect your trip budget.</key>
+	<string>Anh đang lên kế hoạch đi Nhật, nên biến động tỷ giá ảnh hưởng đến ngân sách chuyến đi.</string>
+	<key>Your context stays under your control. Correct it, remove it, or reset at any time.</key>
+	<string>Ngữ cảnh của anh luôn do anh kiểm soát. Chỉnh sửa, xóa hoặc đặt lại bất cứ lúc nào.</string>
+	<key>e.g. OCB, Liverpool FC</key>
+	<string>ví dụ: OCB, Liverpool FC</string>
+	<key>e.g. iOS Developer</key>
+	<string>ví dụ: Lập trình viên iOS</string>
+	<key>filter.active</key>
+	<string>Đang hoạt động</string>
+	<key>filter.all</key>
+	<string>Tất cả</string>
+	<key>filter.paused</key>
+	<string>Đã tạm dừng</string>
+	<key>following %@</key>
+	<string>đang theo dõi %@</string>
+	<key>interested in %@</key>
+	<string>quan tâm %@</string>
+	<key>language.english</key>
+	<string>Tiếng Anh</string>
+	<key>language.system</key>
+	<string>Theo hệ thống</string>
+	<key>language.vietnamese</key>
+	<string>Tiếng Việt</string>
+	<key>planning %@</key>
+	<string>có kế hoạch %@</string>
+</dict>
+</plist>

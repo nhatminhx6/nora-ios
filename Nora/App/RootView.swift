@@ -63,6 +63,12 @@ struct RootView: View {
             .tabItem { Label { Text(AppTab.following.title) } icon: { Image(systemName: AppTab.following.symbolName) } }
             .tag(AppTab.following)
 
+            NavigationStack {
+                CalendarView()
+            }
+            .tabItem { Label { Text(AppTab.calendar.title) } icon: { Image(systemName: AppTab.calendar.symbolName) } }
+            .tag(AppTab.calendar)
+
             NavigationStack(path: $router.profilePath) {
                 ProfileView()
                     .navigationDestination(for: ProfileDestination.self) { destination in

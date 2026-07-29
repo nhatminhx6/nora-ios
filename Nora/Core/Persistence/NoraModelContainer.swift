@@ -8,6 +8,7 @@ enum NoraModelContainer {
             UserProfileEntity.self,
             TopicEntity.self,
             SavedInsightEntity.self,
+            CalendarEventEntity.self,
         ])
     }
 
