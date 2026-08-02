@@ -64,14 +64,24 @@ struct InsightRowView: View {
 
     private var footer: some View {
         HStack(spacing: Spacing.md) {
-            Label("\(insight.sourceCount) sources", systemImage: "doc.text")
-                .font(.noraCaption)
-                .foregroundStyle(.white.opacity(0.58))
-                .labelStyle(.titleAndIcon)
+            if let sourceURL = insight.sourceURL {
+                Link(destination: sourceURL) {
+                    Label(insight.sourceName ?? "Open source", systemImage: "arrow.up.right.square")
+                        .font(.noraCaption)
+                        .foregroundStyle(Color.noraAccentBright)
+                        .labelStyle(.titleAndIcon)
+                        .lineLimit(1)
+                }
+            } else {
+                Label("\(insight.sourceCount) sources", systemImage: "doc.text")
+                    .font(.noraCaption)
+                    .foregroundStyle(.white.opacity(0.58))
+                    .labelStyle(.titleAndIcon)
+            }
 
             Spacer()
 
-            if let action = insight.suggestedAction, let onPrimaryAction {
+            if insight.sourceURL == nil, let action = insight.suggestedAction, let onPrimaryAction {
                 Button(action: {
                     Haptics.play(.light)
                     onPrimaryAction()

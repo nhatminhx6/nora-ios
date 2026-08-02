@@ -19,6 +19,9 @@ struct TodayView: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
+        .refreshable {
+            if let store { await store.refresh() }
+        }
         .task {
             if store == nil {
                 let newStore = TodayStore(environment: environment)

@@ -4,6 +4,7 @@ struct TopicDetailView: View {
     @Environment(AppEnvironment.self) private var environment
     @Environment(\.locale) private var locale
     @State private var store: TopicDetailStore?
+    @State private var browserDestination: BrowserDestination?
     let topicId: UUID
 
     init(topicId: UUID) {
@@ -21,6 +22,10 @@ struct TopicDetailView: View {
         .background { NoraHeroBackground() }
         .environment(\.colorScheme, .dark)
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $browserDestination) { destination in
+            InAppBrowserView(url: destination.url)
+                .ignoresSafeArea()
+        }
         .task {
             if store == nil {
                 let newStore = TopicDetailStore(topicId: topicId, environment: environment)
@@ -32,30 +37,34 @@ struct TopicDetailView: View {
 
     private func loaded(store: TopicDetailStore, topic: Topic) -> some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Spacing.xl) {
+            LazyVStack(alignment: .leading, spacing: Spacing.xl) {
                 header(topic: topic)
                 controls(store: store, topic: topic)
-                trackingRules(topic: topic)
-                whyThisMatters(topic: topic)
+
+                if !topic.trackingRules.isEmpty {
+                    trackingRules(topic: topic)
+                }
+
+                if let reason = topic.relevanceReason, !reason.isEmpty {
+                    whyThisMatters(reason: reason)
+                }
 
                 if !upcoming(store.insights).isEmpty {
                     upcomingSection(items: upcoming(store.insights))
                 }
 
-                if !store.insights.isEmpty {
-                    recentInsights(store: store)
-                }
+                recentInsights(store: store)
 
                 naturalLanguageEdit(store: store)
             }
             .noraScreenPadding()
-            .padding(.bottom, Spacing.xxl)
+            .padding(.bottom, 120)
         }
         .navigationTitle(Text(content: topic.name))
     }
 
     private func header(topic: Topic) -> some View {
-        VStack(alignment: .leading, spacing: Spacing.sm) {
+        VStack(alignment: .leading, spacing: Spacing.md) {
             Label {
                 Text(topic.category.title)
             } icon: {
@@ -64,13 +73,15 @@ struct TopicDetailView: View {
             .font(.noraEyebrow)
             .foregroundStyle(Color.noraTextSecondary)
 
-            Text(content: topic.name)
-                .font(.noraLargeTitle)
-                .foregroundStyle(Color.noraTextPrimary)
+            VStack(alignment: .leading, spacing: Spacing.xs) {
+                Text(content: topic.name)
+                    .font(.noraLargeTitle)
+                    .foregroundStyle(Color.noraTextPrimary)
 
-            Text(topic.relationship.label)
-                .font(.noraSupporting)
-                .foregroundStyle(Color.noraTextSecondary)
+                Text(topic.relationship.label)
+                    .font(.noraSupporting)
+                    .foregroundStyle(Color.noraTextSecondary)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -93,6 +104,7 @@ struct TopicDetailView: View {
                 controlRow(title: "Notifications", value: topic.notificationMode.label)
             }
         }
+        .noraSurfaceCard()
     }
 
     private func controlRow(title: LocalizedStringKey, value: LocalizedStringResource) -> some View {
@@ -108,7 +120,7 @@ struct TopicDetailView: View {
                 .font(.system(size: 12, weight: .semibold))
                 .foregroundStyle(Color.noraTextTertiary)
         }
-        .padding(.vertical, Spacing.md)
+        .padding(.vertical, Spacing.sm)
         .contentShape(Rectangle())
     }
 
@@ -131,12 +143,12 @@ struct TopicDetailView: View {
         }
     }
 
-    private func whyThisMatters(topic: Topic) -> some View {
+    private func whyThisMatters(reason: String) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             SectionHeaderView(title: "Why this matters to you")
-            Text(content: topic.relevanceReason ?? "Nora will explain the reason once it has enough information.")
+            Text(content: reason)
                 .font(.noraBody)
-                .foregroundStyle(Color.noraTextSecondary)
+                .foregroundStyle(Color.noraTextPrimary)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .noraSurfaceCard()
         }
@@ -173,16 +185,85 @@ struct TopicDetailView: View {
 
     private func recentInsights(store: TopicDetailStore) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
-            SectionHeaderView(title: "Recent insight")
-            VStack(spacing: 0) {
-                ForEach(Array(store.insights.enumerated()), id: \.element.id) { index, insight in
-                    InsightRowView(insight: insight)
-                    if index < store.insights.count - 1 {
-                        Divider().overlay(Color.noraDivider)
+            HStack {
+                SectionHeaderView(title: "Recent insight")
+                Spacer()
+                if !store.insights.isEmpty {
+                    Text("\(store.insights.count)")
+                        .font(.noraCaption.weight(.semibold))
+                        .foregroundStyle(Color.noraTextSecondary)
+                        .padding(.horizontal, Spacing.sm)
+                        .padding(.vertical, Spacing.xs)
+                        .background(Color.white.opacity(0.10), in: Capsule())
+                }
+            }
+
+            if store.insights.isEmpty {
+                ContentUnavailableView {
+                    Label("No recent updates", systemImage: "checkmark.circle")
+                } description: {
+                    Text("Nora is still watching this topic for you.")
+                }
+                .foregroundStyle(Color.noraTextSecondary)
+                .frame(maxWidth: .infinity)
+                .noraSurfaceCard()
+            } else {
+                LazyVStack(spacing: Spacing.md) {
+                    ForEach(store.insights) { insight in
+                        insightCard(insight)
                     }
                 }
             }
         }
+    }
+
+    private func insightCard(_ insight: Insight) -> some View {
+        Button {
+            if let sourceURL = insight.sourceURL {
+                browserDestination = BrowserDestination(url: sourceURL)
+            }
+        } label: {
+            VStack(alignment: .leading, spacing: Spacing.md) {
+                HStack(spacing: Spacing.sm) {
+                    Image(systemName: insight.type.symbolName)
+                        .foregroundStyle(Color.noraAccent)
+                    Text(insight.type.label)
+                        .font(.noraCaption.weight(.semibold))
+                        .foregroundStyle(Color.noraTextSecondary)
+                    Spacer()
+                    Text(NoraDateFormat.relativeTimestamp(insight.publishedAt, locale: locale))
+                        .font(.noraCaption)
+                        .foregroundStyle(Color.noraTextTertiary)
+                }
+
+                Text(content: insight.title)
+                    .font(.noraCardTitle)
+                    .foregroundStyle(Color.noraTextPrimary)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Text(content: insight.summary)
+                    .font(.noraSupporting)
+                    .foregroundStyle(Color.noraTextSecondary)
+                    .lineLimit(3)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                if insight.sourceURL != nil {
+                    HStack(spacing: Spacing.xs) {
+                        Image(systemName: "safari")
+                        Text(insight.sourceName ?? "Open source")
+                            .lineLimit(1)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                    }
+                    .font(.noraCaption.weight(.semibold))
+                    .foregroundStyle(Color.noraAccent)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .noraSurfaceCard()
+        }
+        .buttonStyle(.plain)
+        .disabled(insight.sourceURL == nil)
     }
 
     private func naturalLanguageEdit(store: TopicDetailStore) -> some View {

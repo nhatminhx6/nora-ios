@@ -45,6 +45,11 @@
       "key": "briefDate",
       "value": "2026-08-02",
       "type": "string"
+    },
+    {
+      "key": "locale",
+      "value": "vi",
+      "type": "string"
     }
   ],
   "item": [
@@ -303,6 +308,14 @@
       "name": "Briefs and insights",
       "item": [
         {
+          "name": "Sync real content now",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": "{{baseUrl}}/ingestion/sync"
+          }
+        },
+        {
           "name": "Get daily brief",
           "event": [
             {
@@ -321,10 +334,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/briefs/daily?date={{briefDate}}",
+              "raw": "{{baseUrl}}/briefs/daily?date={{briefDate}}&locale={{locale}}",
               "host": ["{{baseUrl}}"],
               "path": ["briefs", "daily"],
-              "query": [{ "key": "date", "value": "{{briefDate}}" }]
+              "query": [
+                { "key": "date", "value": "{{briefDate}}" },
+                { "key": "locale", "value": "{{locale}}" }
+              ]
             }
           }
         },
@@ -345,7 +361,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{baseUrl}}/interests/{{interestId}}/insights"
+            "url": "{{baseUrl}}/interests/{{interestId}}/insights?locale={{locale}}"
           }
         },
         {

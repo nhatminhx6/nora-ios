@@ -69,6 +69,14 @@ struct APIClient: Sendable {
             urlComponents.percentEncodedQuery = components[1]
             if let resolved = urlComponents.url { url = resolved }
         }
+        if var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) {
+            var queryItems = urlComponents.queryItems ?? []
+            if !queryItems.contains(where: { $0.name == "locale" }) {
+                queryItems.append(URLQueryItem(name: "locale", value: AppLanguagePreference.apiCode))
+            }
+            urlComponents.queryItems = queryItems
+            if let resolved = urlComponents.url { url = resolved }
+        }
         var request = URLRequest(url: url)
         request.timeoutInterval = 10
         request.httpMethod = method

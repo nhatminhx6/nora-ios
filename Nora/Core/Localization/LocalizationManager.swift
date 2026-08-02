@@ -27,6 +27,15 @@ enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
     }
 }
 
+enum AppLanguagePreference {
+    static var apiCode: String {
+        let stored = UserDefaults.standard.string(forKey: "nora.language")
+        if stored == AppLanguage.vietnamese.rawValue { return "vi" }
+        if stored == AppLanguage.english.rawValue { return "en" }
+        return Locale.autoupdatingCurrent.language.languageCode?.identifier == "vi" ? "vi" : "en"
+    }
+}
+
 /// Single source of truth for the app's language. Drives both SwiftUI
 /// `Text` (via the environment locale) and imperatively-resolved content
 /// (via `string(_:)`), so an in-app switch updates every surface without a

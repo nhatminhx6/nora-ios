@@ -50,10 +50,19 @@ struct Insight: Identifiable, Codable, Equatable {
     var relevanceReason: String
     var suggestedAction: String?
     var sourceCount: Int
+    var sourceName: String?
+    var sourceURL: URL?
     var publishedAt: Date
     var eventDate: Date?
     var isRead: Bool
     var isSaved: Bool
+
+    private enum CodingKeys: String, CodingKey {
+        case id, topicId, topicName, category, type, title, summary
+        case relevanceReason, suggestedAction, sourceCount, sourceName
+        case sourceURL = "sourceUrl"
+        case publishedAt, eventDate, isRead, isSaved
+    }
 
     init(
         id: UUID = UUID(),
@@ -66,6 +75,8 @@ struct Insight: Identifiable, Codable, Equatable {
         relevanceReason: String,
         suggestedAction: String? = nil,
         sourceCount: Int = 1,
+        sourceName: String? = nil,
+        sourceURL: URL? = nil,
         publishedAt: Date = .now,
         eventDate: Date? = nil,
         isRead: Bool = false,
@@ -81,6 +92,8 @@ struct Insight: Identifiable, Codable, Equatable {
         self.relevanceReason = relevanceReason
         self.suggestedAction = suggestedAction
         self.sourceCount = sourceCount
+        self.sourceName = sourceName
+        self.sourceURL = sourceURL
         self.publishedAt = publishedAt
         self.eventDate = eventDate
         self.isRead = isRead
