@@ -19,18 +19,7 @@ struct PlansStepView: View {
             onSkip: onSkip
         ) {
             VStack(alignment: .leading, spacing: Spacing.lg) {
-                FlowLayout(spacing: Spacing.sm) {
-                    ForEach(store.planSuggestions, id: \.self) { suggestion in
-                        ChipView(
-                            title: suggestion,
-                            isSelected: store.selectedPlans.contains(suggestion)
-                        ) {
-                            toggle(suggestion)
-                        }
-                    }
-                }
-
-                TextField("Or describe your plan", text: $store.customPlanText, axis: .vertical)
+                TextField("Describe your plan", text: $store.customPlanText, axis: .vertical)
                     .textFieldStyle(.plain)
                     .font(.noraBody)
                     .lineLimit(2...4)
@@ -43,13 +32,6 @@ struct PlansStepView: View {
         Double(OnboardingStep.plans.progressIndex) / Double(OnboardingStep.allCases.count - 1)
     }
 
-    private func toggle(_ value: String) {
-        if store.selectedPlans.contains(value) {
-            store.selectedPlans.remove(value)
-        } else {
-            store.selectedPlans.insert(value)
-        }
-    }
 }
 
 #Preview {

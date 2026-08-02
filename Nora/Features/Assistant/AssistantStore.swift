@@ -6,15 +6,17 @@ final class AssistantStore {
     private(set) var messages: [ConversationMessage]
     var composerText: String = ""
     private(set) var isSending = false
-
-    let quickActions = ["Track a new topic", "Summarize this week", "Adjust notifications"]
+    var errorMessage: String?
+    let quickActions: [String] = []
 
     private let assistantService: AssistantService
     private let topicRepository: TopicRepository
+    private let topicService: TopicService
 
     init(environment: AppEnvironment) {
         self.assistantService = environment.assistantService
         self.topicRepository = environment.topicRepository
+        self.topicService = environment.topicService
         self.messages = []
     }
 
@@ -28,13 +30,14 @@ final class AssistantStore {
         isSending = true
 
         Task {
-            let reply = try? await assistantService.send(message: trimmed, history: messages)
-            if let reply {
+            do {
+                let reply = try await assistantService.send(message: trimmed, history: messages)
                 messages.append(reply)
                 if let context = reply.extractedContext {
                     await createTopicIfNeeded(from: context, sourceMessage: trimmed)
                 }
-            }
+                errorMessage = nil
+            } catch { errorMessage = error.localizedDescription }
             isSending = false
         }
     }
@@ -53,6 +56,9 @@ final class AssistantStore {
             notificationMode: .dailyBrief,
             relevanceReason: sourceMessage
         )
-        try? topicRepository.upsert(topic)
+        do {
+            try await topicService.addTopic(topic)
+            try topicRepository.upsert(topic)
+        } catch { errorMessage = error.localizedDescription }
     }
 }

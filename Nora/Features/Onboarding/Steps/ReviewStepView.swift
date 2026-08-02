@@ -30,6 +30,15 @@ struct ReviewStepView: View {
                 }
                 .font(.noraSupporting)
                 .foregroundStyle(Color.noraTextSecondary)
+
+                if let error = store.submissionError {
+                    Label(error, systemImage: "exclamationmark.triangle.fill")
+                        .font(.noraSupporting)
+                        .foregroundStyle(Color.noraWarning)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .noraSurfaceCard()
+                }
             }
         }
     }

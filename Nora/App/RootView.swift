@@ -11,7 +11,10 @@ struct RootView: View {
 
     var body: some View {
         Group {
-            if hasCompletedOnboarding {
+            if !environment.authSession.isAuthenticated {
+                LoginView()
+                    .transition(.opacity)
+            } else if hasCompletedOnboarding {
                 mainTabView
             } else {
                 OnboardingView(onComplete: {

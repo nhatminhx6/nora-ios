@@ -1,0 +1,406 @@
+{
+  "info": {
+    "_postman_id": "b90102eb-232b-4992-9e4d-b4149b31bf51",
+    "name": "Nora Backend",
+    "description": "Nora development API collection. Authentication and resource IDs are managed through collection variables.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{accessToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000/v1",
+      "type": "string"
+    },
+    {
+      "key": "accessToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4ZDFkZjE2Ni03M2ZlLTQxMzgtYWI0Ny01ZDVhMDY2ZjQ1YWEiLCJlbWFpbCI6Im1pbmhtZXJhQGdtYWlsLmNvbSIsImlhdCI6MTc4NTYzNzAyNSwiZXhwIjoxNzkwODIxMDI1fQ.ARewluyEa1VLOhkujDBi6XAk16EZCdlG1fAnGeyuQqY",
+      "type": "string"
+    },
+    {
+      "key": "refreshToken",
+      "value": "Cvjya5KXUHAGONcoOig4NxKXn6eR54mxrny6u-2zxE1xpvHGUx6O9hACspCvptgC",
+      "type": "string"
+    },
+    {
+      "key": "interestId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "userInsightId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "briefDate",
+      "value": "2026-08-02",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health check",
+          "auth": { "type": "noauth" },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "auth": { "type": "noauth" },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.accessToken) pm.collectionVariables.set('accessToken', body.data.accessToken);",
+                  "if (body.data?.refreshToken) pm.collectionVariables.set('refreshToken', body.data.refreshToken);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"minhmera@gmail.com\",\n  \"password\": \"12345678\",\n  \"displayName\": \"Minh\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/auth/register"
+          }
+        },
+        {
+          "name": "Login",
+          "auth": { "type": "noauth" },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.accessToken) pm.collectionVariables.set('accessToken', body.data.accessToken);",
+                  "if (body.data?.refreshToken) pm.collectionVariables.set('refreshToken', body.data.refreshToken);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"minhmera@gmail.com\",\n  \"password\": \"12345678\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/auth/login"
+          }
+        },
+        {
+          "name": "Refresh token",
+          "auth": { "type": "noauth" },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.accessToken) pm.collectionVariables.set('accessToken', body.data.accessToken);",
+                  "if (body.data?.refreshToken) pm.collectionVariables.set('refreshToken', body.data.refreshToken);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/auth/refresh"
+          }
+        },
+        {
+          "name": "Logout",
+          "auth": { "type": "noauth" },
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/auth/logout"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get my profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/users/me"
+          }
+        },
+        {
+          "name": "Update my profile",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"displayName\": \"Minh\",\n  \"timezone\": \"Asia/Ho_Chi_Minh\",\n  \"locale\": \"vi\",\n  \"profession\": \"iOS Developer\",\n  \"interests\": [\"SwiftUI\", \"AI\"],\n  \"goals\": [\"Phát triển Nora\"],\n  \"locations\": [\"Ho Chi Minh City\"],\n  \"notificationIntensity\": \"balanced\",\n  \"dailyBriefTime\": \"08:00\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/users/me"
+          }
+        },
+        {
+          "name": "Delete account (development only)",
+          "auth": { "type": "noauth" },
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"minhmera@gmail.com\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/users/account"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Interests",
+      "item": [
+        {
+          "name": "List interests",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.[0]?.id) pm.collectionVariables.set('interestId', body.data[0].id);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/interests"
+          }
+        },
+        {
+          "name": "Create interest",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.id) pm.collectionVariables.set('interestId', body.data.id);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"SwiftUI\",\n  \"description\": \"Theo dõi cập nhật SwiftUI\",\n  \"type\": \"TECHNOLOGY\",\n  \"config\": {\n    \"category\": \"work\",\n    \"relationship\": \"learning\",\n    \"priority\": \"high\",\n    \"trackingRules\": [\"API changes\", \"New releases\", \"Breaking changes\"],\n    \"notificationMode\": \"dailyBrief\",\n    \"relevanceReason\": \"Đang phát triển ứng dụng iOS\"\n  }\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/interests"
+          }
+        },
+        {
+          "name": "Update interest",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"SwiftUI\",\n  \"description\": \"Theo dõi SwiftUI và iOS SDK\",\n  \"type\": \"TECHNOLOGY\",\n  \"status\": \"ACTIVE\",\n  \"config\": {\n    \"category\": \"work\",\n    \"relationship\": \"learning\",\n    \"priority\": \"high\",\n    \"trackingRules\": [\"API changes\", \"WWDC sessions\"],\n    \"notificationMode\": \"immediate\",\n    \"relevanceReason\": \"Đang phát triển Nora iOS\"\n  }\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/interests/{{interestId}}"
+          }
+        },
+        {
+          "name": "Pause interest",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"PAUSED\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/interests/{{interestId}}"
+          }
+        },
+        {
+          "name": "Resume interest",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"ACTIVE\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/interests/{{interestId}}"
+          }
+        },
+        {
+          "name": "Delete interest",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/interests/{{interestId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Briefs and insights",
+      "item": [
+        {
+          "name": "Get daily brief",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "const first = body.data?.brief?.importantInsights?.[0] ?? body.data?.brief?.otherInsights?.[0];",
+                  "if (first?.id) pm.collectionVariables.set('userInsightId', first.id);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/briefs/daily?date={{briefDate}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["briefs", "daily"],
+              "query": [{ "key": "date", "value": "{{briefDate}}" }]
+            }
+          }
+        },
+        {
+          "name": "Get interest insights",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const body = pm.response.json();",
+                  "if (body.data?.[0]?.id) pm.collectionVariables.set('userInsightId', body.data[0].id);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/interests/{{interestId}}/insights"
+          }
+        },
+        {
+          "name": "Mark insight useful",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"READ\",\n  \"isUseful\": true\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/user-insights/{{userInsightId}}"
+          }
+        },
+        {
+          "name": "Dismiss insight",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"DISMISSED\",\n  \"isUseful\": false\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/user-insights/{{userInsightId}}"
+          }
+        },
+        {
+          "name": "Save insight",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isSaved\": true\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/user-insights/{{userInsightId}}"
+          }
+        },
+        {
+          "name": "Unsave insight",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isSaved\": false\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/user-insights/{{userInsightId}}"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -23,6 +23,17 @@ struct AssistantView: View {
         .environment(\.colorScheme, .dark)
         .navigationTitle("Assistant")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(
+            "Assistant unavailable",
+            isPresented: Binding(
+                get: { store?.errorMessage != nil },
+                set: { if !$0 { store?.errorMessage = nil } }
+            )
+        ) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(store?.errorMessage ?? "")
+        }
         .task {
             if store == nil {
                 store = AssistantStore(environment: environment)
@@ -91,7 +102,9 @@ struct AssistantView: View {
             }
             .noraScreenPadding()
 
-            QuickActionsBar(actions: store.quickActions, onTap: store.sendQuickReply)
+            if !store.quickActions.isEmpty {
+                QuickActionsBar(actions: store.quickActions, onTap: store.sendQuickReply)
+            }
         }
     }
 }

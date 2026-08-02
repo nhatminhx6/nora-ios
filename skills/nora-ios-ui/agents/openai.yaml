@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nora iOS UI"
+  short_description: "Build consistent, padded Nora iOS screens"
+  default_prompt: "Use $nora-ios-ui to build or update this Nora SwiftUI screen."

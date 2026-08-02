@@ -23,12 +23,12 @@ struct ProfileView: View {
 
     var body: some View {
         Group {
-            if let store, let profile = store.profile {
-                content(store: store, profile: profile)
+            if let store {
+                profileState(store)
             } else {
                 // Keep the view non-empty so `.task` fires and creates the
                 // store; a bare `Group` collapses to `EmptyView` when nil.
-                Color.clear
+                loadingState
             }
         }
         .background { NoraHeroBackground() }
@@ -46,6 +46,44 @@ struct ProfileView: View {
                 sheet(for: target, store: store, profile: profile)
             }
         }
+    }
+
+    @ViewBuilder
+    private func profileState(_ store: ProfileStore) -> some View {
+        if store.isLoading {
+            loadingState
+        } else if let profile = store.profile {
+            content(store: store, profile: profile)
+        } else {
+            errorState(store)
+        }
+    }
+
+    private var loadingState: some View {
+        VStack(spacing: Spacing.base) {
+            ProgressView()
+                .tint(.noraAccentBright)
+            Text("Loading your profile…")
+                .font(.noraSupporting)
+                .foregroundStyle(Color.noraTextSecondary)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .noraScreenPadding()
+        .accessibilityElement(children: .combine)
+    }
+
+    private func errorState(_ store: ProfileStore) -> some View {
+        ScrollView {
+            ErrorStateView(
+                title: "Your profile couldn't be loaded.",
+                supportingText: store.errorMessage ?? "Check that Nora's backend is running, then try again.",
+                onRetry: { Task { await store.load() } }
+            )
+            .frame(maxWidth: .infinity)
+            .padding(.top, Spacing.xxl)
+            .noraScreenPadding()
+        }
+        .refreshable { await store.load() }
     }
 
     private func content(store: ProfileStore, profile: UserProfile) -> some View {

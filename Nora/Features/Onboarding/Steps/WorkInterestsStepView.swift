@@ -28,16 +28,11 @@ struct WorkInterestsStepView: View {
                         .font(.noraSupporting)
                         .foregroundStyle(Color.noraTextSecondary)
 
-                    FlowLayout(spacing: Spacing.sm) {
-                        ForEach(store.interestSuggestions, id: \.self) { suggestion in
-                            ChipView(
-                                title: suggestion,
-                                isSelected: store.selectedInterests.contains(suggestion)
-                            ) {
-                                toggle(suggestion)
-                            }
-                        }
-                    }
+                    TextField("Add topics separated by commas", text: $store.customInterestText, axis: .vertical)
+                        .textFieldStyle(.plain)
+                        .font(.noraBody)
+                        .lineLimit(2...4)
+                        .noraInputFieldBackground()
                 }
             }
         }
@@ -47,13 +42,6 @@ struct WorkInterestsStepView: View {
         Double(OnboardingStep.workAndInterests.progressIndex) / Double(OnboardingStep.allCases.count - 1)
     }
 
-    private func toggle(_ value: String) {
-        if store.selectedInterests.contains(value) {
-            store.selectedInterests.remove(value)
-        } else {
-            store.selectedInterests.insert(value)
-        }
-    }
 }
 
 #Preview {

@@ -8,6 +8,7 @@ struct NoraApp: App {
     @State private var localization: LocalizationManager
 
     init() {
+        AuthTokenStore().clearStaleSessionOnFreshDebugInstall()
         let container = modelContainer
         let localization = LocalizationManager()
         _localization = State(initialValue: localization)

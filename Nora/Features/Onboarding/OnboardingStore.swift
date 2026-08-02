@@ -10,16 +10,14 @@ final class OnboardingStore {
 
     // Work & interests
     var professionInput: String = ""
-    let interestSuggestions = ["SwiftUI", "Liverpool FC", "Sci-fi movies", "Photography", "Cooking"]
     var selectedInterests: Set<String> = []
+    var customInterestText: String = ""
 
     // Investments / important topics
-    let topicSuggestions = ["OCB", "Bank stocks", "Real estate", "Savings"]
     var selectedTopics: Set<String> = []
     var customTopicText: String = ""
 
     // Current plans
-    let planSuggestions = ["Trip to Japan", "Buy a new car", "Learn a new skill", "Change jobs"]
     var selectedPlans: Set<String> = []
     var customPlanText: String = ""
 
@@ -27,6 +25,7 @@ final class OnboardingStore {
     var notificationPreference: NotificationIntensity = .balanced
 
     var isSubmitting = false
+    var submissionError: String?
 
     private let environment: AppEnvironment
     private let localization: LocalizationManager
@@ -65,8 +64,9 @@ final class OnboardingStore {
         if !customTopicText.trimmingCharacters(in: .whitespaces).isEmpty {
             interests.append(customTopicText)
         }
+        interests.append(contentsOf: parsedCustomInterests)
         return UserProfile(
-            displayName: "Anh",
+            displayName: environment.authSession.session?.user.displayName ?? "",
             profession: professionInput.isEmpty ? nil : professionInput,
             interests: interests,
             goals: goals,
@@ -82,10 +82,24 @@ final class OnboardingStore {
         for name in selectedInterests {
             topics.append(Topic(name: name, category: .other, relationship: .favorite))
         }
+        for customInterest in parsedCustomInterests {
+            topics.append(Topic(name: customInterest, category: .other, relationship: .favorite))
+        }
+        let customTopic = customTopicText.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !customTopic.isEmpty {
+            topics.append(Topic(name: customTopic, category: .investments, relationship: .holding))
+        }
         for name in selectedPlans {
             topics.append(Topic(name: name, category: .travel, relationship: .planning))
         }
         return topics
+    }
+
+    private var parsedCustomInterests: [String] {
+        customInterestText
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
     }
 
     var understandingSummary: String {
@@ -114,15 +128,21 @@ final class OnboardingStore {
     }
 
     func finish() async {
+        guard !isSubmitting else { return }
         isSubmitting = true
+        submissionError = nil
         defer { isSubmitting = false }
 
-        try? await environment.profileService.updateProfile(generatedProfile)
-        try? environment.profileRepository.save(generatedProfile)
-        for topic in generatedTopics {
-            try? environment.topicRepository.upsert(topic)
+        do {
+            try await environment.profileService.updateProfile(generatedProfile)
+            try environment.profileRepository.save(generatedProfile)
+            for topic in generatedTopics {
+                try await environment.topicService.addTopic(topic)
+            }
+            onComplete()
+        } catch {
+            submissionError = error.localizedDescription
         }
-        onComplete()
     }
 }
  

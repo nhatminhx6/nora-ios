@@ -36,15 +36,25 @@ final class FollowingStore {
     private(set) var isLoading = true
 
     private let topicRepository: TopicRepository
+    private let topicService: TopicService
+    private(set) var errorMessage: String?
 
     init(environment: AppEnvironment) {
         self.topicRepository = environment.topicRepository
+        self.topicService = environment.topicService
     }
 
-    func load() {
+    func load() async {
         isLoading = true
         defer { isLoading = false }
-        topics = (try? topicRepository.fetchAll()) ?? []
+        do {
+            topics = try await topicService.fetchTopics()
+            for topic in topics { try topicRepository.upsert(topic) }
+            errorMessage = nil
+        } catch {
+            topics = []
+            errorMessage = error.localizedDescription
+        }
     }
 
     var groupedTopics: [TopicGroup] {
@@ -67,21 +77,34 @@ final class FollowingStore {
     func togglePause(_ topic: Topic) {
         var updated = topic
         updated.status = topic.status == .active ? .paused : .active
-        try? topicRepository.upsert(updated)
-        load()
-        Haptics.play(.light)
+        Task {
+            do {
+                try await topicService.updateTopic(updated)
+                await load()
+                Haptics.play(.light)
+            } catch { errorMessage = error.localizedDescription }
+        }
     }
 
     func delete(_ topic: Topic) {
-        try? topicRepository.delete(id: topic.id)
-        load()
-        Haptics.play(.medium)
+        Task {
+            do {
+                try await topicService.deleteTopic(id: topic.id)
+                try topicRepository.delete(id: topic.id)
+                await load()
+                Haptics.play(.medium)
+            } catch { errorMessage = error.localizedDescription }
+        }
     }
 
     func addTopic(name: String, category: TopicCategory, relationship: TopicRelationship) {
         let topic = Topic(name: name, category: category, relationship: relationship)
-        try? topicRepository.upsert(topic)
-        load()
-        Haptics.play(.success)
+        Task {
+            do {
+                try await topicService.addTopic(topic)
+                await load()
+                Haptics.play(.success)
+            } catch { errorMessage = error.localizedDescription }
+        }
     }
 }

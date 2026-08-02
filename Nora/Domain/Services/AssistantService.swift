@@ -7,6 +7,25 @@ protocol AssistantService: Sendable {
     func send(message: String, history: [ConversationMessage]) async throws -> ConversationMessage
 }
 
+struct LiveAssistantService: AssistantService {
+    private let client: APIClient
+
+    init(client: APIClient = APIClient()) { self.client = client }
+
+    func send(message: String, history: [ConversationMessage]) async throws -> ConversationMessage {
+        try await client.send(
+            "assistant/messages",
+            method: "POST",
+            body: AssistantRequest(message: message, history: history)
+        )
+    }
+}
+
+private struct AssistantRequest: Encodable {
+    let message: String
+    let history: [ConversationMessage]
+}
+
 actor MockAssistantService: AssistantService {
     func send(message: String, history: [ConversationMessage]) async throws -> ConversationMessage {
         try await Task.sleep(for: .milliseconds(600))

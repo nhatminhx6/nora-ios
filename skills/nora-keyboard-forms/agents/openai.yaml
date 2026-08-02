@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nora Keyboard Forms"
+  short_description: "Keep form actions visible above keyboards"
+  default_prompt: "Use $nora-keyboard-forms to build or review this keyboard-aware SwiftUI form."

@@ -34,6 +34,9 @@ targets:
         CFBundleLocalizations:
           - en
           - vi
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NORA_API_BASE_URL: $(NORA_API_BASE_URL)
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.nora.app
@@ -41,6 +44,7 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         DEVELOPMENT_ASSET_PATHS: ""
+        NORA_API_BASE_URL: http://localhost:3000/v1
     scheme:
       testTargets:
         - NoraTests

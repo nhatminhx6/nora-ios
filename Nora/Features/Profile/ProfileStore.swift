@@ -6,29 +6,46 @@ final class ProfileStore {
     private(set) var profile: UserProfile?
     private(set) var investmentTopics: [Topic] = []
     private(set) var isLoading = true
+    private(set) var errorMessage: String?
 
     private let profileService: ProfileService
     private let profileRepository: ProfileRepository
     private let topicRepository: TopicRepository
+    private let topicService: TopicService
     private let localization: LocalizationManager
 
     init(environment: AppEnvironment) {
         self.profileService = environment.profileService
         self.profileRepository = environment.profileRepository
         self.topicRepository = environment.topicRepository
+        self.topicService = environment.topicService
         self.localization = environment.localization
     }
 
     func load() async {
         isLoading = true
+        errorMessage = nil
         defer { isLoading = false }
 
-        if let stored = try? profileRepository.fetch() {
-            profile = stored
-        } else {
-            profile = try? await profileService.fetchProfile()
+        do {
+            let fetchedProfile = try await profileService.fetchProfile()
+            profile = fetchedProfile
+            try profileRepository.save(fetchedProfile)
+        } catch {
+            profile = nil
+            errorMessage = error.localizedDescription
+            investmentTopics = []
+            return
         }
-        investmentTopics = ((try? topicRepository.fetchAll()) ?? []).filter { $0.category == .investments }
+
+        do {
+            let topics = try await topicService.fetchTopics()
+            investmentTopics = topics.filter { $0.category == .investments }
+            for topic in topics { try topicRepository.upsert(topic) }
+        } catch {
+            investmentTopics = []
+            // Topic failure must not erase a successfully loaded profile.
+        }
     }
 
     var understandingSummary: String {
@@ -81,17 +98,26 @@ final class ProfileStore {
     }
 
     func resetPersonalization() async {
-        try? await profileService.resetPersonalization()
-        try? profileRepository.deleteAll()
-        await load()
-        Haptics.play(.medium)
+        do {
+            try await profileService.resetPersonalization()
+            try profileRepository.deleteAll()
+            await load()
+            Haptics.play(.medium)
+        } catch {}
     }
 
     private func save(_ profile: UserProfile) {
         var updated = profile
         updated.updatedAt = .now
         self.profile = updated
-        try? profileRepository.save(updated)
-        Haptics.play(.light)
+        Task {
+            do {
+                try await profileService.updateProfile(updated)
+                try profileRepository.save(updated)
+                Haptics.play(.light)
+            } catch {
+                await load()
+            }
+        }
     }
 }

@@ -23,7 +23,7 @@ struct FollowingView: View {
             if store == nil {
                 let newStore = FollowingStore(environment: environment)
                 store = newStore
-                newStore.load()
+                await newStore.load()
             }
         }
         .sheet(isPresented: $isAddingTopic) {
@@ -39,7 +39,6 @@ struct FollowingView: View {
             EmptyStateView(
                 symbolName: "sparkle.magnifyingglass",
                 title: "Start with something already on your mind.",
-                suggestions: ["A company you follow", "A team you support", "A trip you are planning", "A skill you are learning"],
                 onSuggestionTapped: { _ in isAddingTopic = true }
             )
             .toolbar { addButton }

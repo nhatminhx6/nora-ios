@@ -19,12 +19,11 @@ final class SettingsStore {
     func load() async {
         isLoading = true
         defer { isLoading = false }
-        if let stored = try? profileRepository.fetch() {
-            profile = stored
-        } else {
-            // Fall back to the service on a fresh install so Settings is
-            // never empty before the user has edited their profile.
-            profile = try? await profileService.fetchProfile()
+        do {
+            profile = try await profileService.fetchProfile()
+            if let profile { try profileRepository.save(profile) }
+        } catch {
+            profile = nil
         }
     }
 
@@ -33,7 +32,7 @@ final class SettingsStore {
         profile.notificationPreference = intensity
         profile.updatedAt = .now
         self.profile = profile
-        try? profileRepository.save(profile)
+        persist(profile)
     }
 
     func updateDailyBriefTime(_ components: DateComponents) {
@@ -41,7 +40,18 @@ final class SettingsStore {
         profile.dailyBriefTime = components
         profile.updatedAt = .now
         self.profile = profile
-        try? profileRepository.save(profile)
+        persist(profile)
         Task { try? await notificationService.scheduleDailyBrief(at: components) }
+    }
+
+    private func persist(_ profile: UserProfile) {
+        Task {
+            do {
+                try await profileService.updateProfile(profile)
+                try profileRepository.save(profile)
+            } catch {
+                await load()
+            }
+        }
     }
 }

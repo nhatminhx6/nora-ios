@@ -22,8 +22,14 @@ final class TopicDetailStore {
     func load() async {
         isLoading = true
         defer { isLoading = false }
-        topic = (try? topicRepository.fetchAll())?.first { $0.id == topicId }
-        insights = (try? await topicService.fetchInsights(for: topicId)) ?? []
+        do {
+            let topics = try await topicService.fetchTopics()
+            topic = topics.first { $0.id == topicId }
+            insights = try await topicService.fetchInsights(for: topicId)
+        } catch {
+            topic = nil
+            insights = []
+        }
     }
 
     func updatePriority(_ priority: TopicPriority) {
@@ -53,7 +59,14 @@ final class TopicDetailStore {
 
     private func persist(_ topic: Topic) {
         self.topic = topic
-        try? topicRepository.upsert(topic)
-        Haptics.play(.light)
+        Task {
+            do {
+                try await topicService.updateTopic(topic)
+                try topicRepository.upsert(topic)
+                Haptics.play(.light)
+            } catch {
+                await load()
+            }
+        }
     }
 }

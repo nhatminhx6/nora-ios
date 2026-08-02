@@ -6,7 +6,7 @@ struct TodayView: View {
     @Environment(AppEnvironment.self) private var environment
     @Environment(AppRouter.self) private var router
     @State private var store: TodayStore?
-    @State private var displayName: String = "there"
+    @State private var displayName: String = ""
 
     var body: some View {
         ScrollView {
@@ -23,9 +23,7 @@ struct TodayView: View {
             if store == nil {
                 let newStore = TodayStore(environment: environment)
                 store = newStore
-                if let profile = try? environment.profileRepository.fetch() {
-                    displayName = profile.displayName
-                } else if let profile = try? await environment.profileService.fetchProfile() {
+                if let profile = try? await environment.profileService.fetchProfile() {
                     displayName = profile.displayName
                 }
                 await newStore.load()
@@ -90,11 +88,6 @@ struct TodayView: View {
                 }
             }
 
-            DailyReflectionCard(
-                prompt: store.reflectionPrompt,
-                hasAnswered: store.hasAnsweredReflection,
-                onAnswer: store.submitReflection
-            )
         }
         .noraScreenPadding()
         .padding(.bottom, Spacing.xxl)

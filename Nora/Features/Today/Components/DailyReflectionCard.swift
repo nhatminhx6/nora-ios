@@ -28,6 +28,10 @@ struct DailyReflectionCard: View {
 }
 
 #Preview {
-    DailyReflectionCard(prompt: ReflectionPrompts.all[0], hasAnswered: false, onAnswer: { _ in })
+    DailyReflectionCard(
+        prompt: ReflectionPrompt(question: "Was this useful?", options: ["Yes", "No"]),
+        hasAnswered: false,
+        onAnswer: { _ in }
+    )
         .noraScreenPadding()
 }
