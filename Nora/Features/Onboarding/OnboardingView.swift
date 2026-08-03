@@ -18,7 +18,9 @@ struct OnboardingView: View {
         }
         .task {
             if store == nil {
-                store = OnboardingStore(environment: environment, onComplete: onComplete)
+                let newStore = OnboardingStore(environment: environment, onComplete: onComplete)
+                store = newStore
+                await newStore.loadCatalog()
             }
         }
     }
@@ -33,8 +35,6 @@ struct OnboardingView: View {
                 WorkInterestsStepView(store: store, onNext: { advance(store) }, onSkip: { store.skipToReview() })
             case .investments:
                 InvestmentsStepView(store: store, onNext: { advance(store) }, onBack: { retreat(store) }, onSkip: { store.skipToReview() })
-            case .plans:
-                PlansStepView(store: store, onNext: { advance(store) }, onBack: { retreat(store) }, onSkip: { store.skipToReview() })
             case .notificationPreference:
                 NotificationPreferenceStepView(store: store, onNext: { advance(store) }, onBack: { retreat(store) })
             case .review:

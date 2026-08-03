@@ -2,7 +2,10 @@ import Foundation
 
 /// Manages the set of topics Nora is following on the user's behalf.
 protocol TopicService: Sendable {
+    func fetchCatalog() async throws -> [TopicCatalogItem]
     func fetchTopics() async throws -> [Topic]
+    func addCatalogTopic(key: String, refinements: [String]) async throws
+    func prepareContent() async throws
     func addTopic(_ topic: Topic) async throws
     func updateTopic(_ topic: Topic) async throws
     func deleteTopic(id: UUID) async throws
@@ -17,16 +20,35 @@ struct LiveTopicService: TopicService {
 
     init(client: APIClient = APIClient()) { self.client = client }
 
+    func fetchCatalog() async throws -> [TopicCatalogItem] {
+        try await client.send("interests/catalog")
+    }
+
     func fetchTopics() async throws -> [Topic] {
         let response: [InterestResponse] = try await client.send("interests")
         return response.map(\.model)
     }
 
     func addTopic(_ topic: Topic) async throws {
+        guard let topicKey = topic.topicKey else {
+            throw APIClientError.server("Choose a topic from Nora's catalog.")
+        }
+        try await addCatalogTopic(key: topicKey, refinements: topic.refinements)
+    }
+
+    func addCatalogTopic(key: String, refinements: [String]) async throws {
         let _: InterestResponse = try await client.send(
             "interests",
             method: "POST",
-            body: InterestRequest(topic: topic)
+            body: CreateCatalogInterestRequest(topicKey: key, refinements: refinements)
+        )
+    }
+
+    func prepareContent() async throws {
+        let _: ContentPreparationResponse = try await client.send(
+            "ingestion/sync",
+            method: "POST",
+            timeoutInterval: 180
         )
     }
 
@@ -67,6 +89,7 @@ private struct UserInsightResponse: Decodable {
 
 private struct InterestResponse: Decodable {
     let id: UUID
+    let topicKey: String?
     let name: String
     let type: String
     let status: String
@@ -76,6 +99,7 @@ private struct InterestResponse: Decodable {
     var model: Topic {
         Topic(
             id: id,
+            topicKey: topicKey,
             name: name,
             category: config.category ?? Self.category(for: type),
             relationship: config.relationship ?? .learning,
@@ -84,6 +108,7 @@ private struct InterestResponse: Decodable {
             notificationMode: config.notificationMode ?? .dailyBrief,
             status: status == "PAUSED" ? .paused : .active,
             relevanceReason: config.relevanceReason,
+            refinements: config.refinements,
             createdAt: createdAt
         )
     }
@@ -107,6 +132,7 @@ private struct TopicConfig: Codable {
     let trackingRules: [String]
     let notificationMode: TopicNotificationMode?
     let relevanceReason: String?
+    let refinements: [String]
 
     init(topic: Topic) {
         category = topic.category
@@ -115,6 +141,7 @@ private struct TopicConfig: Codable {
         trackingRules = topic.trackingRules
         notificationMode = topic.notificationMode
         relevanceReason = topic.relevanceReason
+        refinements = topic.refinements
     }
 
     init(from decoder: Decoder) throws {
@@ -125,7 +152,20 @@ private struct TopicConfig: Codable {
         trackingRules = try values.decodeIfPresent([String].self, forKey: .trackingRules) ?? []
         notificationMode = try values.decodeIfPresent(TopicNotificationMode.self, forKey: .notificationMode)
         relevanceReason = try values.decodeIfPresent(String.self, forKey: .relevanceReason)
+        refinements = try values.decodeIfPresent([String].self, forKey: .refinements) ?? []
     }
+}
+
+private struct CreateCatalogInterestRequest: Encodable {
+    let topicKey: String
+    let refinements: [String]
+}
+
+private struct ContentPreparationResponse: Decodable {
+    let interests: Int
+    let events: Int
+    let insights: Int
+    let briefId: String?
 }
 
 private struct InterestRequest: Encodable {
@@ -161,6 +201,19 @@ actor MockTopicService: TopicService {
         self.topics = seed
         self.insights = insightSeed
     }
+
+    func fetchCatalog() async throws -> [TopicCatalogItem] {
+        [
+            TopicCatalogItem(key: "travel", name: "Du lịch", description: "Điểm đến, visa, thời tiết và thay đổi hành trình.", category: .travel, symbol: "airplane", refinementLabel: "Địa điểm anh quan tâm", refinementPlaceholder: "Cửu Trại Câu, Thành Đô"),
+            TopicCatalogItem(key: "technology", name: "Công nghệ", description: "Sản phẩm, nền tảng và thay đổi kỹ thuật đáng chú ý.", category: .work, symbol: "cpu", refinementLabel: "Công nghệ cụ thể", refinementPlaceholder: "SwiftUI, iOS, OpenAI"),
+        ]
+    }
+
+    func addCatalogTopic(key: String, refinements: [String]) async throws {
+        topics.append(Topic(topicKey: key, name: key, category: .other, relationship: .favorite, refinements: refinements))
+    }
+
+    func prepareContent() async throws {}
 
     func fetchTopics() async throws -> [Topic] {
         try await Task.sleep(for: .milliseconds(250))

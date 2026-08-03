@@ -40,6 +40,7 @@ struct OnboardingScaffold<Content: View>: View {
                 .noraScreenPadding()
                 .padding(.bottom, Spacing.xl)
             }
+            .scrollDismissesKeyboard(.interactively)
 
             footer
         }

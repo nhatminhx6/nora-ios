@@ -124,6 +124,7 @@ enum TopicStatus: String, Codable, CaseIterable, Identifiable, Hashable {
 /// Something Nora is watching on the user's behalf.
 struct Topic: Identifiable, Codable, Equatable {
     var id: UUID
+    var topicKey: String?
     var name: String
     var category: TopicCategory
     var relationship: TopicRelationship
@@ -134,10 +135,12 @@ struct Topic: Identifiable, Codable, Equatable {
     var notificationMode: TopicNotificationMode
     var status: TopicStatus
     var relevanceReason: String?
+    var refinements: [String]
     var createdAt: Date
 
     init(
         id: UUID = UUID(),
+        topicKey: String? = nil,
         name: String,
         category: TopicCategory,
         relationship: TopicRelationship,
@@ -146,9 +149,11 @@ struct Topic: Identifiable, Codable, Equatable {
         notificationMode: TopicNotificationMode = .dailyBrief,
         status: TopicStatus = .active,
         relevanceReason: String? = nil,
+        refinements: [String] = [],
         createdAt: Date = .now
     ) {
         self.id = id
+        self.topicKey = topicKey
         self.name = name
         self.category = category
         self.relationship = relationship
@@ -157,6 +162,7 @@ struct Topic: Identifiable, Codable, Equatable {
         self.notificationMode = notificationMode
         self.status = status
         self.relevanceReason = relevanceReason
+        self.refinements = refinements
         self.createdAt = createdAt
     }
 }

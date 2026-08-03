@@ -8,18 +8,11 @@ import Foundation
 final class OnboardingStore {
     var step: OnboardingStep = .welcome
 
-    // Work & interests
-    var professionInput: String = ""
-    var selectedInterests: Set<String> = []
-    var customInterestText: String = ""
-
-    // Investments / important topics
-    var selectedTopics: Set<String> = []
-    var customTopicText: String = ""
-
-    // Current plans
-    var selectedPlans: Set<String> = []
-    var customPlanText: String = ""
+    private(set) var catalog: [TopicCatalogItem] = []
+    var selectedTopicKeys: Set<String> = []
+    var refinementText: [String: String] = [:]
+    private(set) var isLoadingCatalog = false
+    var catalogError: String?
 
     // Notification preference
     var notificationPreference: NotificationIntensity = .balanced
@@ -38,6 +31,37 @@ final class OnboardingStore {
     }
 
     var canGoBack: Bool { step != .welcome }
+    var selectedCatalogItems: [TopicCatalogItem] {
+        catalog.filter { selectedTopicKeys.contains($0.key) }
+    }
+
+    func loadCatalog() async {
+        guard catalog.isEmpty, !isLoadingCatalog else { return }
+        isLoadingCatalog = true
+        catalogError = nil
+        defer { isLoadingCatalog = false }
+        do {
+            catalog = try await environment.topicService.fetchCatalog()
+        } catch {
+            catalogError = error.localizedDescription
+        }
+    }
+
+    func toggleTopic(_ key: String) {
+        if selectedTopicKeys.contains(key) {
+            selectedTopicKeys.remove(key)
+            refinementText[key] = nil
+        } else {
+            selectedTopicKeys.insert(key)
+        }
+    }
+
+    func refinements(for key: String) -> [String] {
+        (refinementText[key] ?? "")
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+    }
 
     func goNext() {
         guard let next = OnboardingStep(rawValue: step.rawValue + 1) else { return }
@@ -56,70 +80,30 @@ final class OnboardingStore {
     }
 
     var generatedProfile: UserProfile {
-        var interests = Array(selectedInterests)
-        var goals = Array(selectedPlans)
-        if !customPlanText.trimmingCharacters(in: .whitespaces).isEmpty {
-            goals.append(customPlanText)
-        }
-        if !customTopicText.trimmingCharacters(in: .whitespaces).isEmpty {
-            interests.append(customTopicText)
-        }
-        interests.append(contentsOf: parsedCustomInterests)
         return UserProfile(
             displayName: environment.authSession.session?.user.displayName ?? "",
-            profession: professionInput.isEmpty ? nil : professionInput,
-            interests: interests,
-            goals: goals,
+            interests: selectedCatalogItems.map(\.name),
             notificationPreference: notificationPreference
         )
     }
 
     var generatedTopics: [Topic] {
-        var topics: [Topic] = []
-        for name in selectedTopics {
-            topics.append(Topic(name: name, category: .investments, relationship: .holding))
+        selectedCatalogItems.map { item in
+            Topic(
+                topicKey: item.key,
+                name: item.name,
+                category: item.category,
+                relationship: item.category == .travel ? .planning : .favorite,
+                refinements: refinements(for: item.key)
+            )
         }
-        for name in selectedInterests {
-            topics.append(Topic(name: name, category: .other, relationship: .favorite))
-        }
-        for customInterest in parsedCustomInterests {
-            topics.append(Topic(name: customInterest, category: .other, relationship: .favorite))
-        }
-        let customTopic = customTopicText.trimmingCharacters(in: .whitespacesAndNewlines)
-        if !customTopic.isEmpty {
-            topics.append(Topic(name: customTopic, category: .investments, relationship: .holding))
-        }
-        for name in selectedPlans {
-            topics.append(Topic(name: name, category: .travel, relationship: .planning))
-        }
-        return topics
-    }
-
-    private var parsedCustomInterests: [String] {
-        customInterestText
-            .split(separator: ",")
-            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-            .filter { !$0.isEmpty }
     }
 
     var understandingSummary: String {
-        var parts: [String] = []
-        if let profession = professionInput.isEmpty ? nil : professionInput {
-            parts.append(localization.string("You're a \(localizedList([profession]))"))
-        }
-        if !selectedInterests.isEmpty {
-            parts.append(localization.string("interested in \(localizedList(Array(selectedInterests)))"))
-        }
-        if !selectedTopics.isEmpty {
-            parts.append(localization.string("following \(localizedList(Array(selectedTopics)))"))
-        }
-        if !selectedPlans.isEmpty {
-            parts.append(localization.string("planning \(localizedList(Array(selectedPlans)))"))
-        }
-        guard !parts.isEmpty else {
+        guard !selectedCatalogItems.isEmpty else {
             return localization.string("Nora will learn more about you through your conversations.")
         }
-        return parts.joined(separator: ", ") + "."
+        return localization.string("Nora will prepare updates for \(localizedList(selectedCatalogItems.map(\.name))).")
     }
 
     /// Localize each item (proper nouns pass through) and join for display.
@@ -137,8 +121,10 @@ final class OnboardingStore {
             try await environment.profileService.updateProfile(generatedProfile)
             try environment.profileRepository.save(generatedProfile)
             for topic in generatedTopics {
-                try await environment.topicService.addTopic(topic)
+                guard let key = topic.topicKey else { continue }
+                try await environment.topicService.addCatalogTopic(key: key, refinements: topic.refinements)
             }
+            try await environment.topicService.prepareContent()
             onComplete()
         } catch {
             submissionError = error.localizedDescription

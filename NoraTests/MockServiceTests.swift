@@ -10,7 +10,13 @@ struct MockServiceTests {
 
     @Test func topicServiceAddAndFetchRoundTrips() async throws {
         let service = MockTopicService(seed: [], insightSeed: [])
-        let topic = Topic(name: "Test Topic", category: .other, relationship: .learning)
+        let topic = Topic(
+            topicKey: "technology",
+            name: "Technology",
+            category: .technology,
+            relationship: .learning,
+            refinements: ["SwiftUI"]
+        )
         try await service.addTopic(topic)
         let fetched = try await service.fetchTopics()
         #expect(fetched.contains { $0.id == topic.id })

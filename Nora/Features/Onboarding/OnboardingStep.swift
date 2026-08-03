@@ -6,7 +6,6 @@ enum OnboardingStep: Int, CaseIterable, Hashable {
     case welcome
     case workAndInterests
     case investments
-    case plans
     case notificationPreference
     case review
 

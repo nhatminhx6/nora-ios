@@ -2446,6 +2446,7 @@
       }
     },
     "Topics you're interested in" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {

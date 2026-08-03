@@ -9,20 +9,41 @@ struct InvestmentsStepView: View {
     var body: some View {
         OnboardingScaffold(
             progress: progressValue,
-            title: "What are you investing in or keeping an eye on?",
-            subtitle: "Nora will track earnings, prices, and related news.",
+            title: "Nói rõ hơn một chút",
+            subtitle: "Thông tin bổ sung giúp Nora lọc chính xác hơn. Mỗi mục cách nhau bằng dấu phẩy.",
             canGoBack: true,
             onBack: onBack,
-            primaryTitle: "Continue",
+            primaryTitle: "Tiếp tục",
             isPrimaryEnabled: true,
             onPrimary: onNext,
             onSkip: onSkip
         ) {
-            VStack(alignment: .leading, spacing: Spacing.lg) {
-                TextField("Type an investment or asset name", text: $store.customTopicText)
-                    .textFieldStyle(.plain)
-                    .font(.noraBody)
-                    .noraInputFieldBackground()
+            LazyVStack(alignment: .leading, spacing: Spacing.lg) {
+                ForEach(store.selectedCatalogItems) { item in
+                    VStack(alignment: .leading, spacing: Spacing.sm) {
+                        Label(item.name, systemImage: item.symbol)
+                            .font(.noraCardTitle)
+                            .foregroundStyle(Color.noraTextPrimary)
+
+                        Text(item.refinementLabel)
+                            .font(.noraSupporting)
+                            .foregroundStyle(Color.noraTextSecondary)
+
+                        TextField(
+                            item.refinementPlaceholder,
+                            text: Binding(
+                                get: { store.refinementText[item.key] ?? "" },
+                                set: { store.refinementText[item.key] = $0 }
+                            ),
+                            axis: .vertical
+                        )
+                        .textFieldStyle(.plain)
+                        .font(.noraBody)
+                        .lineLimit(1...3)
+                        .noraInputFieldBackground()
+                    }
+                    .noraSurfaceCard()
+                }
             }
         }
     }
@@ -30,7 +51,6 @@ struct InvestmentsStepView: View {
     private var progressValue: Double {
         Double(OnboardingStep.investments.progressIndex) / Double(OnboardingStep.allCases.count - 1)
     }
-
 }
 
 #Preview {

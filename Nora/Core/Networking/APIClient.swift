@@ -61,7 +61,8 @@ struct APIClient: Sendable {
         _ path: String,
         method: String = "GET",
         body: Body? = Optional<String>.none,
-        authenticated: Bool = true
+        authenticated: Bool = true,
+        timeoutInterval: TimeInterval = 10
     ) async throws -> Response {
         let components = path.split(separator: "?", maxSplits: 1).map(String.init)
         var url = baseURL.appending(path: components[0])
@@ -78,7 +79,7 @@ struct APIClient: Sendable {
             if let resolved = urlComponents.url { url = resolved }
         }
         var request = URLRequest(url: url)
-        request.timeoutInterval = 10
+        request.timeoutInterval = timeoutInterval
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         if let body {

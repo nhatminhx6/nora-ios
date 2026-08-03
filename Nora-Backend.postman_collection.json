@@ -231,6 +231,14 @@
           }
         },
         {
+          "name": "Get topic catalog",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/interests/catalog?locale={{locale}}"
+          }
+        },
+        {
           "name": "Create interest",
           "event": [
             {
@@ -249,7 +257,7 @@
             "header": [{ "key": "Content-Type", "value": "application/json" }],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"name\": \"SwiftUI\",\n  \"description\": \"Theo dõi cập nhật SwiftUI\",\n  \"type\": \"TECHNOLOGY\",\n  \"config\": {\n    \"category\": \"work\",\n    \"relationship\": \"learning\",\n    \"priority\": \"high\",\n    \"trackingRules\": [\"API changes\", \"New releases\", \"Breaking changes\"],\n    \"notificationMode\": \"dailyBrief\",\n    \"relevanceReason\": \"Đang phát triển ứng dụng iOS\"\n  }\n}",
+              "raw": "{\n  \"topicKey\": \"travel\",\n  \"refinements\": [\"Cửu Trại Câu\", \"Thành Đô\"]\n}",
               "options": { "raw": { "language": "json" } }
             },
             "url": "{{baseUrl}}/interests"
