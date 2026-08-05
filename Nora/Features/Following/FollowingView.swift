@@ -7,16 +7,20 @@ struct FollowingView: View {
     @State private var isAddingTopic = false
 
     var body: some View {
-        Group {
-            if let store {
-                content(store: store)
-            } else {
-                // Keep the view non-empty so `.task` fires and creates the
-                // store; a bare `Group` collapses to `EmptyView` when nil.
-                Color.clear
+        ZStack {
+            NoraHeroBackground()
+
+            Group {
+                if let store {
+                    content(store: store)
+                } else {
+                    ProgressView()
+                        .tint(.noraAccentBright)
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .background { NoraHeroBackground() }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .environment(\.colorScheme, .dark)
         .navigationTitle("Following")
         .task {
