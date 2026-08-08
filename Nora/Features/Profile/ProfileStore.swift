@@ -7,6 +7,7 @@ final class ProfileStore {
     private(set) var investmentTopics: [Topic] = []
     private(set) var isLoading = true
     private(set) var errorMessage: String?
+    private(set) var isSaving = false
 
     private let profileService: ProfileService
     private let profileRepository: ProfileRepository
@@ -98,6 +99,9 @@ final class ProfileStore {
     }
 
     func resetPersonalization() async {
+        guard !isSaving else { return }
+        isSaving = true
+        defer { isSaving = false }
         do {
             try await profileService.resetPersonalization()
             try profileRepository.deleteAll()
@@ -111,6 +115,8 @@ final class ProfileStore {
         updated.updatedAt = .now
         self.profile = updated
         Task {
+            isSaving = true
+            defer { isSaving = false }
             do {
                 try await profileService.updateProfile(updated)
                 try profileRepository.save(updated)

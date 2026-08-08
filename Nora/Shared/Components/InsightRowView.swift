@@ -100,22 +100,30 @@ struct InsightRowView: View {
                 .buttonStyle(.plain)
             }
 
+            if let onSave {
+                Button(action: onSave) {
+                    Image(systemName: insight.isSaved ? "bookmark.fill" : "bookmark")
+                        .foregroundStyle(insight.isSaved ? Color.noraAccentBright : .white.opacity(0.72))
+                        .frame(width: TouchTarget.minimum, height: TouchTarget.minimum)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(insight.isSaved ? "Remove from saved" : "Save")
+            }
+
             feedbackMenu
         }
     }
 
     @ViewBuilder
     private var feedbackMenu: some View {
-        if onMarkUseful != nil || onMarkNotRelevant != nil || onSave != nil || onMuteTopic != nil {
+        if onMarkUseful != nil || onMarkNotRelevant != nil || onMuteTopic != nil {
             Menu {
                 if let onMarkUseful {
                     Button("Useful", systemImage: "hand.thumbsup", action: onMarkUseful)
                 }
                 if let onMarkNotRelevant {
                     Button("Not relevant", systemImage: "hand.thumbsdown", action: onMarkNotRelevant)
-                }
-                if let onSave {
-                    Button(insight.isSaved ? "Saved" : "Save", systemImage: insight.isSaved ? "bookmark.fill" : "bookmark", action: onSave)
                 }
                 if let onMuteTopic {
                     Button("Mute \(insight.topicName)", systemImage: "bell.slash", role: .destructive, action: onMuteTopic)

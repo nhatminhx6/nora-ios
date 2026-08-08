@@ -5,21 +5,27 @@ import SwiftUI
 struct RootView: View {
     @Environment(AppEnvironment.self) private var environment
     @Environment(LocalizationManager.self) private var localization
+    @Environment(\.scenePhase) private var scenePhase
     @State private var router = AppRouter()
-    @AppStorage("nora.hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    // Local cache for fast launch; refreshed from the backend whenever the session becomes active.
+    @AppStorage("nora.hasCompletedOnboarding") private var onboardingCompleted = false
+    @AppStorage("nora.lastHandledOnboardingRestartToken") private var lastHandledRestartToken = ""
     @AppStorage("nora.appearance") private var appearance: AppearanceOption = .system
+    @State private var isResolvingOnboarding = true
 
     var body: some View {
         Group {
             if !environment.authSession.isAuthenticated {
                 LoginView()
                     .transition(.opacity)
-            } else if hasCompletedOnboarding {
+            } else if isResolvingOnboarding {
+                NoraFullscreenLoadingView(label: "Preparing Nora for you…")
+            } else if onboardingCompleted {
                 mainTabView
             } else {
                 OnboardingView(onComplete: {
                     withAnimation(.easeInOut(duration: 0.35)) {
-                        hasCompletedOnboarding = true
+                        onboardingCompleted = true
                     }
                 })
             }
@@ -30,6 +36,13 @@ struct RootView: View {
         // and content is refetched in the newly selected language.
         .id(localization.language)
         .preferredColorScheme(colorScheme)
+        .task(id: environment.authSession.isAuthenticated) {
+            await synchronizeOnboardingState()
+        }
+        .onChange(of: scenePhase) { _, phase in
+            guard phase == .active, environment.authSession.isAuthenticated else { return }
+            Task { await synchronizeOnboardingState() }
+        }
     }
 
     private var colorScheme: ColorScheme? {
@@ -37,6 +50,30 @@ struct RootView: View {
         case .system: nil
         case .light: .light
         case .dark: .dark
+        }
+    }
+
+    @MainActor
+    private func synchronizeOnboardingState() async {
+        guard environment.authSession.isAuthenticated else {
+            isResolvingOnboarding = false
+            return
+        }
+        isResolvingOnboarding = true
+        defer { isResolvingOnboarding = false }
+        do {
+            let serverState = try await environment.profileService.fetchOnboardingState()
+            if let restartToken = serverState.restartToken,
+               restartToken != lastHandledRestartToken {
+                lastHandledRestartToken = restartToken
+                onboardingCompleted = false
+                return
+            }
+            // Completion is monotonic on-device: a stale or delayed backend
+            // response must never send the user back through onboarding.
+            onboardingCompleted = onboardingCompleted || serverState.isCompleted
+        } catch {
+            // Keep the last known local state when the server is temporarily unavailable.
         }
     }
 
@@ -49,10 +86,10 @@ struct RootView: View {
             .tag(AppTab.today)
 
             NavigationStack {
-                AssistantView()
+                SavedView()
             }
-            .tabItem { Label { Text(AppTab.assistant.title) } icon: { Image(systemName: AppTab.assistant.symbolName) } }
-            .tag(AppTab.assistant)
+            .tabItem { Label { Text(AppTab.saved.title) } icon: { Image(systemName: AppTab.saved.symbolName) } }
+            .tag(AppTab.saved)
 
             NavigationStack(path: $router.followingPath) {
                 FollowingView()

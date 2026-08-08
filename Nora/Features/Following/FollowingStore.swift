@@ -34,6 +34,7 @@ final class FollowingStore {
     var searchText: String = ""
     var filter: FollowingFilter = .all
     private(set) var isLoading = true
+    private(set) var isPerformingAction = false
 
     private let topicRepository: TopicRepository
     private let topicService: TopicService
@@ -78,6 +79,8 @@ final class FollowingStore {
         var updated = topic
         updated.status = topic.status == .active ? .paused : .active
         Task {
+            isPerformingAction = true
+            defer { isPerformingAction = false }
             do {
                 try await topicService.updateTopic(updated)
                 await load()
@@ -88,6 +91,8 @@ final class FollowingStore {
 
     func delete(_ topic: Topic) {
         Task {
+            isPerformingAction = true
+            defer { isPerformingAction = false }
             do {
                 try await topicService.deleteTopic(id: topic.id)
                 try topicRepository.delete(id: topic.id)
@@ -100,6 +105,8 @@ final class FollowingStore {
     func addTopic(name: String, category: TopicCategory, relationship: TopicRelationship) {
         let topic = Topic(name: name, category: category, relationship: relationship)
         Task {
+            isPerformingAction = true
+            defer { isPerformingAction = false }
             do {
                 try await topicService.addTopic(topic)
                 await load()

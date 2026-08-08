@@ -37,7 +37,7 @@ final class AuthSessionStore {
 
     func logout() {
         tokenStore.clear()
+        UserDefaults.standard.removeObject(forKey: "nora.hasCompletedOnboarding")
         session = nil
     }
 }
-

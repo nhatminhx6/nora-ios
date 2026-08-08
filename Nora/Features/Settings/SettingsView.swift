@@ -26,7 +26,9 @@ struct SettingsView: View {
 
     var body: some View {
         Group {
-            if let store, let profile = store.profile {
+            if let store, store.isLoading {
+                NoraFullscreenLoadingView(label: "Loading your settings…")
+            } else if let store, let profile = store.profile {
                 form(store: store, profile: profile)
             } else {
                 // Keep the view non-empty so `.task` fires and creates the
@@ -46,6 +48,11 @@ struct SettingsView: View {
                 if let profile = newStore.profile {
                     dailyBriefTime = Calendar.current.date(from: profile.dailyBriefTime) ?? .now
                 }
+            }
+        }
+        .overlay {
+            if let store, store.isSaving {
+                NoraLoadingOverlay(label: "Saving…")
             }
         }
     }

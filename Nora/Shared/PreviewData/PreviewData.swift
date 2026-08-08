@@ -104,7 +104,7 @@ enum PreviewData {
         topicName: "Liverpool FC",
         category: .sports,
         type: .upcoming,
-        title: "Liverpool face Manchester City tonight",
+        title: "Liverpool face Chelsea tonight",
         summary: "Kickoff at Anfield, 23:30. Liverpool are unbeaten in their last 6 league games.",
         relevanceReason: "Liverpool is your favorite club.",
         sourceCount: 2,
@@ -178,7 +178,7 @@ enum PreviewData {
             UpcomingItem(
                 topicName: "Liverpool FC",
                 category: .sports,
-                title: "Liverpool vs Manchester City",
+                title: "Liverpool vs Chelsea",
                 date: .now.addingTimeInterval(6 * 3600)
             ),
             UpcomingItem(

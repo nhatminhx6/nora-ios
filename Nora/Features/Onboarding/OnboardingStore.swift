@@ -18,7 +18,6 @@ final class OnboardingStore {
     var notificationPreference: NotificationIntensity = .balanced
 
     var isSubmitting = false
-    var submissionError: String?
 
     private let environment: AppEnvironment
     private let localization: LocalizationManager
@@ -103,7 +102,8 @@ final class OnboardingStore {
         guard !selectedCatalogItems.isEmpty else {
             return localization.string("Nora will learn more about you through your conversations.")
         }
-        return localization.string("Nora will prepare updates for \(localizedList(selectedCatalogItems.map(\.name))).")
+        let prefix = localization.string("Nora will prepare updates for")
+        return "\(prefix) \(localizedList(selectedCatalogItems.map(\.name)))."
     }
 
     /// Localize each item (proper nouns pass through) and join for display.
@@ -114,20 +114,26 @@ final class OnboardingStore {
     func finish() async {
         guard !isSubmitting else { return }
         isSubmitting = true
-        submissionError = nil
-        defer { isSubmitting = false }
 
-        do {
-            try await environment.profileService.updateProfile(generatedProfile)
-            try environment.profileRepository.save(generatedProfile)
-            for topic in generatedTopics {
+        let profile = generatedProfile
+        let topics = generatedTopics
+
+        // Onboarding is never blocked by backend availability. Persist what
+        // we can locally, enter the app immediately, then sync best-effort.
+        try? environment.profileRepository.save(profile)
+        onComplete()
+        isSubmitting = false
+
+        Task {
+            try? await environment.profileService.updateProfile(profile)
+            for topic in topics {
                 guard let key = topic.topicKey else { continue }
-                try await environment.topicService.addCatalogTopic(key: key, refinements: topic.refinements)
+                try? await environment.topicService.addCatalogTopic(
+                    key: key,
+                    refinements: topic.refinements
+                )
             }
-            try await environment.topicService.prepareContent()
-            onComplete()
-        } catch {
-            submissionError = error.localizedDescription
+            try? await environment.topicService.prepareContent()
         }
     }
 }

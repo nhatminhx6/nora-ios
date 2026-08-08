@@ -3,7 +3,7 @@ import SwiftUI
 /// The top-level destinations. Order here defines tab order.
 enum AppTab: Int, CaseIterable, Identifiable, Hashable {
     case today
-    case assistant
+    case saved
     case following
     case calendar
     case profile
@@ -13,7 +13,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
     var title: LocalizedStringResource {
         switch self {
         case .today: "Today"
-        case .assistant: "Assistant"
+        case .saved: "Saved"
         case .following: "Following"
         case .calendar: "Calendar"
         case .profile: "Profile"
@@ -23,7 +23,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
     var symbolName: String {
         switch self {
         case .today: "sun.max"
-        case .assistant: "bubble.left.and.text.bubble.right"
+        case .saved: "bookmark"
         case .following: "eye"
         case .calendar: "calendar"
         case .profile: "person.crop.circle"

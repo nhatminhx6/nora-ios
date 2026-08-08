@@ -1,5 +1,31 @@
 import SwiftUI
 
+/// Blocks repeated interaction while a short API mutation is in flight.
+/// Initial screen loads should continue to use their dedicated skeletons.
+struct NoraLoadingOverlay: View {
+    var label: LocalizedStringKey = "Updating…"
+
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.28)
+                .ignoresSafeArea()
+
+            HStack(spacing: Spacing.md) {
+                NoraLoadingMark(size: 24)
+                Text(label)
+                    .font(.noraSupporting.weight(.semibold))
+                    .foregroundStyle(.white)
+            }
+            .padding(.horizontal, Spacing.lg)
+            .padding(.vertical, Spacing.base)
+            .background(.ultraThinMaterial, in: Capsule())
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.updatesFrequently)
+        }
+        .transition(.opacity)
+    }
+}
+
 /// A single skeleton line with a very subtle shimmer, sized to stand in for
 /// real content rather than a spinner.
 struct SkeletonLine: View {

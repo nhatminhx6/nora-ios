@@ -46,6 +46,11 @@ struct ProfileView: View {
                 sheet(for: target, store: store, profile: profile)
             }
         }
+        .overlay {
+            if let store, store.isSaving {
+                NoraLoadingOverlay(label: "Saving…")
+            }
+        }
     }
 
     @ViewBuilder
@@ -60,16 +65,7 @@ struct ProfileView: View {
     }
 
     private var loadingState: some View {
-        VStack(spacing: Spacing.base) {
-            ProgressView()
-                .tint(.noraAccentBright)
-            Text("Loading your profile…")
-                .font(.noraSupporting)
-                .foregroundStyle(Color.noraTextSecondary)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .noraScreenPadding()
-        .accessibilityElement(children: .combine)
+        NoraFullscreenLoadingView(label: "Loading your profile…")
     }
 
     private func errorState(_ store: ProfileStore) -> some View {

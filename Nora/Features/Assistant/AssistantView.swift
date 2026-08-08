@@ -61,7 +61,7 @@ struct AssistantView: View {
 
                             if store.isSending {
                                 HStack(spacing: Spacing.xs) {
-                                    ProgressView().controlSize(.mini)
+                                    NoraLoadingMark(size: 20)
                                     Text("Nora is typing…")
                                         .font(.noraCaption)
                                         .foregroundStyle(Color.noraTextTertiary)

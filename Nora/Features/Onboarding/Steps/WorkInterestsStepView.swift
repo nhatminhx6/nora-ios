@@ -19,8 +19,7 @@ struct WorkInterestsStepView: View {
         ) {
             LazyVStack(spacing: Spacing.md) {
                 if store.isLoadingCatalog {
-                    ProgressView()
-                        .tint(Color.noraAccent)
+                    NoraLoadingMark(size: 28)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, Spacing.xxl)
                 } else if let error = store.catalogError {

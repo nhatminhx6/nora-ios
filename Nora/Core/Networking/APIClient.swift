@@ -109,10 +109,16 @@ struct APIClient: Sendable {
         if http.statusCode == 204, Response.self == EmptyResponse.self {
             return EmptyResponse() as! Response
         }
-        guard let value = try makeDecoder().decode(APIEnvelope<Response>.self, from: data).data else {
+        do {
+            guard let value = try makeDecoder().decode(APIEnvelope<Response>.self, from: data).data else {
+                throw APIClientError.invalidResponse
+            }
+            return value
+        } catch let error as APIClientError {
+            throw error
+        } catch is DecodingError {
             throw APIClientError.invalidResponse
         }
-        return value
     }
 
     func send<Response: Decodable>(

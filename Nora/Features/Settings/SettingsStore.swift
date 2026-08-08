@@ -5,6 +5,8 @@ import Foundation
 final class SettingsStore {
     private(set) var profile: UserProfile?
     private(set) var isLoading = true
+    private var pendingSaveCount = 0
+    var isSaving: Bool { pendingSaveCount > 0 }
 
     private let profileService: ProfileService
     private let profileRepository: ProfileRepository
@@ -46,6 +48,8 @@ final class SettingsStore {
 
     private func persist(_ profile: UserProfile) {
         Task {
+            pendingSaveCount += 1
+            defer { pendingSaveCount -= 1 }
             do {
                 try await profileService.updateProfile(profile)
                 try profileRepository.save(profile)

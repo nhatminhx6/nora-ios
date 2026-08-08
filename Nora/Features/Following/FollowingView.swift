@@ -14,8 +14,7 @@ struct FollowingView: View {
                 if let store {
                     content(store: store)
                 } else {
-                    ProgressView()
-                        .tint(.noraAccentBright)
+                    NoraFullscreenLoadingView(label: "Loading what you follow…")
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -35,11 +34,18 @@ struct FollowingView: View {
                 AddTopicSheet(onAdd: store.addTopic)
             }
         }
+        .overlay {
+            if let store, store.isPerformingAction {
+                NoraLoadingOverlay()
+            }
+        }
     }
 
     @ViewBuilder
     private func content(store: FollowingStore) -> some View {
-        if store.isEmpty {
+        if store.isLoading {
+            NoraFullscreenLoadingView(label: "Loading what you follow…")
+        } else if store.isEmpty {
             EmptyStateView(
                 symbolName: "sparkle.magnifyingglass",
                 title: "Start with something already on your mind.",

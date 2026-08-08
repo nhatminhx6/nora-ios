@@ -11,6 +11,7 @@ struct OnboardingScaffold<Content: View>: View {
     let onBack: () -> Void
     let primaryTitle: LocalizedStringKey
     let isPrimaryEnabled: Bool
+    var isPrimaryLoading = false
     let onPrimary: () -> Void
     var onSkip: (() -> Void)?
     @ViewBuilder var content: Content
@@ -79,7 +80,14 @@ struct OnboardingScaffold<Content: View>: View {
 
     private var footer: some View {
         VStack {
-            Button(primaryTitle, action: onPrimary)
+            Button(action: onPrimary) {
+                HStack(spacing: Spacing.sm) {
+                    if isPrimaryLoading {
+                        NoraLoadingMark(size: 24)
+                    }
+                    Text(primaryTitle)
+                }
+            }
                 .buttonStyle(.noraPrimary)
                 .disabled(!isPrimaryEnabled)
                 .opacity(isPrimaryEnabled ? 1 : 0.5)

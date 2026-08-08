@@ -6,6 +6,7 @@ final class CalendarStore {
     private(set) var events: [CalendarEvent] = []
     var visibleMonth: Date
     var selectedDate: Date
+    private(set) var isScheduling = false
 
     private let repository: CalendarEventRepository
     private let notificationService: NotificationService
@@ -32,6 +33,9 @@ final class CalendarStore {
     }
 
     func add(_ event: CalendarEvent) async {
+        guard !isScheduling else { return }
+        isScheduling = true
+        defer { isScheduling = false }
         try? repository.save(event)
         let status = await notificationService.authorizationStatus()
         if status == .notDetermined {

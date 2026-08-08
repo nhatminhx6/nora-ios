@@ -3,8 +3,14 @@ import Foundation
 /// Reads and writes the user's learned profile.
 protocol ProfileService: Sendable {
     func fetchProfile() async throws -> UserProfile
+    func fetchOnboardingState() async throws -> OnboardingState
     func updateProfile(_ profile: UserProfile) async throws
     func resetPersonalization() async throws
+}
+
+struct OnboardingState: Sendable {
+    let isCompleted: Bool
+    let restartToken: String?
 }
 
 struct LiveProfileService: ProfileService {
@@ -17,6 +23,14 @@ struct LiveProfileService: ProfileService {
         return response.model
     }
 
+    func fetchOnboardingState() async throws -> OnboardingState {
+        let response: ProfileResponse = try await client.send("users/me")
+        return OnboardingState(
+            isCompleted: response.profileData.onboardingCompleted,
+            restartToken: response.profileData.onboardingRestartToken
+        )
+    }
+
     func updateProfile(_ profile: UserProfile) async throws {
         let _: ProfileResponse = try await client.send(
             "users/me",
@@ -26,24 +40,7 @@ struct LiveProfileService: ProfileService {
     }
 
     func resetPersonalization() async throws {
-        let current = try await fetchProfile()
-        let _: ProfileResponse = try await client.send(
-            "users/me",
-            method: "PATCH",
-            body: UpdateProfileRequest(
-                displayName: current.displayName,
-                profession: nil,
-                interests: [],
-                goals: [],
-                locations: [],
-                notificationIntensity: current.notificationPreference.rawValue,
-                dailyBriefTime: Self.timeString(current.dailyBriefTime)
-            )
-        )
-    }
-
-    private static func timeString(_ components: DateComponents) -> String {
-        String(format: "%02d:%02d", components.hour ?? 0, components.minute ?? 0)
+        let _: ResetPersonalizationResponse = try await client.send("users/me/data", method: "DELETE")
     }
 }
 
@@ -78,17 +75,21 @@ private struct NotificationPreferences: Decodable {
 }
 
 private struct ProfileData: Decodable {
+    let onboardingCompleted: Bool
+    let onboardingRestartToken: String?
     let profession: String?
     let interests: [String]
     let goals: [String]
     let locations: [String]
 
     private enum CodingKeys: String, CodingKey {
-        case profession, interests, goals, locations
+        case onboardingCompleted, onboardingRestartToken, profession, interests, goals, locations
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+        onboardingCompleted = try values.decodeIfPresent(Bool.self, forKey: .onboardingCompleted) ?? false
+        onboardingRestartToken = try values.decodeIfPresent(String.self, forKey: .onboardingRestartToken)
         profession = try values.decodeIfPresent(String.self, forKey: .profession)
         interests = try values.decodeIfPresent([String].self, forKey: .interests) ?? []
         goals = try values.decodeIfPresent([String].self, forKey: .goals) ?? []
@@ -97,6 +98,7 @@ private struct ProfileData: Decodable {
 }
 
 private struct UpdateProfileRequest: Encodable {
+    let onboardingCompleted: Bool
     let displayName: String
     let profession: String?
     let interests: [String]
@@ -106,6 +108,7 @@ private struct UpdateProfileRequest: Encodable {
     let dailyBriefTime: String
 
     init(
+        onboardingCompleted: Bool = true,
         displayName: String,
         profession: String?,
         interests: [String],
@@ -114,6 +117,7 @@ private struct UpdateProfileRequest: Encodable {
         notificationIntensity: String,
         dailyBriefTime: String
     ) {
+        self.onboardingCompleted = onboardingCompleted
         self.displayName = displayName
         self.profession = profession
         self.interests = interests
@@ -136,6 +140,10 @@ private struct UpdateProfileRequest: Encodable {
     }
 }
 
+private struct ResetPersonalizationResponse: Decodable {
+    let onboardingRequired: Bool
+}
+
 /// In-memory mock so the app runs fully without a backend.
 actor MockProfileService: ProfileService {
     private var profile: UserProfile
@@ -147,6 +155,10 @@ actor MockProfileService: ProfileService {
     func fetchProfile() async throws -> UserProfile {
         try await Task.sleep(for: .milliseconds(200))
         return profile
+    }
+
+    func fetchOnboardingState() async throws -> OnboardingState {
+        OnboardingState(isCompleted: true, restartToken: nil)
     }
 
     func updateProfile(_ profile: UserProfile) async throws {

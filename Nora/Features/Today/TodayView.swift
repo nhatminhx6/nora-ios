@@ -32,13 +32,19 @@ struct TodayView: View {
                 await newStore.load()
             }
         }
+        .overlay {
+            if let store, store.isPerformingAction {
+                NoraLoadingOverlay()
+            }
+        }
     }
 
     @ViewBuilder
     private func content(store: TodayStore) -> some View {
         switch store.state {
         case .loading:
-            TodaySkeletonView()
+            NoraFullscreenLoadingView(label: "Preparing your latest brief…")
+                .frame(minHeight: UIScreen.main.bounds.height)
         case .error:
             ErrorStateView(
                 title: "Today's brief could not be refreshed.",
@@ -56,11 +62,14 @@ struct TodayView: View {
             TodayHeaderView(displayName: displayName, headline: brief.headline, date: brief.date)
 
             if brief.importantInsights.isEmpty && brief.otherInsights.isEmpty && brief.upcomingItems.isEmpty {
-                EmptyStateView(
-                    symbolName: "checkmark.circle",
-                    title: "Nothing needs your attention right now.",
-                    supportingText: "We're still watching the things you care about."
-                )
+                HStack(spacing: Spacing.md) {
+                    NoraLoadingMark(size: 28)
+                    Text("Nora is preparing your latest brief…")
+                        .font(.noraSupporting)
+                        .foregroundStyle(Color.noraTextSecondary)
+                }
+                .frame(maxWidth: .infinity)
+                .noraSurfaceCard()
             } else {
                 if !brief.importantInsights.isEmpty {
                     InsightSectionView(

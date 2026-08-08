@@ -123,7 +123,7 @@ struct LoginView: View {
         Button(action: submit) {
             ZStack {
                 if authSession.isSubmitting {
-                    ProgressView().tint(.white)
+                    NoraLoadingMark(size: 24)
                 } else {
                     Text("Continue")
                         .font(.noraCardTitle)

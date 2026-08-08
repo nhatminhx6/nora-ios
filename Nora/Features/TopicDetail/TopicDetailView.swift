@@ -16,7 +16,7 @@ struct TopicDetailView: View {
             if let store, let topic = store.topic {
                 loaded(store: store, topic: topic)
             } else {
-                TodaySkeletonView()
+                NoraFullscreenLoadingView(label: "Loading topic updates…")
             }
         }
         .background { NoraHeroBackground() }
@@ -31,6 +31,11 @@ struct TopicDetailView: View {
                 let newStore = TopicDetailStore(topicId: topicId, environment: environment)
                 store = newStore
                 await newStore.load()
+            }
+        }
+        .overlay {
+            if let store, store.isSaving {
+                NoraLoadingOverlay(label: "Saving…")
             }
         }
     }

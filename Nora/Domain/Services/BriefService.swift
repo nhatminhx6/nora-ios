@@ -16,12 +16,7 @@ struct LiveBriefService: BriefService {
     init(client: APIClient = APIClient()) { self.client = client }
 
     func fetchBrief(for date: Date) async throws -> Brief {
-        let formatter = DateFormatter()
-        formatter.calendar = Calendar(identifier: .gregorian)
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.timeZone = .current
-        formatter.dateFormat = "yyyy-MM-dd"
-        let response: DailyBriefResponse = try await client.send("briefs/daily?date=\(formatter.string(from: date))")
+        let response: DailyBriefResponse = try await client.send("briefs/daily")
         return response.brief ?? Brief(date: date, headline: "")
     }
 

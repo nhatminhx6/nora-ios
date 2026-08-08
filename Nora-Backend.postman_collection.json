@@ -192,6 +192,21 @@
           }
         },
         {
+          "name": "Restart onboarding by email (development only)",
+          "auth": { "type": "noauth" },
+          "request": {
+            "method": "POST",
+            "description": "Restarts onboarding while preserving the active account and its existing feed data.",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"minhmera@gmail.com\"\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": "{{baseUrl}}/users/onboarding/restart"
+          }
+        },
+        {
           "name": "Delete account (development only)",
           "auth": { "type": "noauth" },
           "request": {

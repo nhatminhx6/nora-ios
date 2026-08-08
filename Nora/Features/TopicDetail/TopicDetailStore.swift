@@ -6,6 +6,7 @@ final class TopicDetailStore {
     private(set) var topic: Topic?
     private(set) var insights: [Insight] = []
     private(set) var isLoading = true
+    private(set) var isSaving = false
     var naturalLanguageInput: String = ""
     var didConfirmEdit = false
 
@@ -60,6 +61,8 @@ final class TopicDetailStore {
     private func persist(_ topic: Topic) {
         self.topic = topic
         Task {
+            isSaving = true
+            defer { isSaving = false }
             do {
                 try await topicService.updateTopic(topic)
                 try topicRepository.upsert(topic)

@@ -57,6 +57,11 @@ struct CalendarView: View {
                 }
             }
         }
+        .overlay {
+            if let store, store.isScheduling {
+                NoraLoadingOverlay(label: "Scheduling…")
+            }
+        }
     }
 
     private func monthHeader(_ store: CalendarStore) -> some View {
