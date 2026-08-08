@@ -2490,13 +2490,13 @@
         }
       }
     },
-    "Today" : {
+    "Home" : {
       "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hôm nay"
+            "value" : "Trang chủ"
           }
         }
       }

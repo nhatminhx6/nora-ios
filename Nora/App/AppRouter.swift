@@ -12,7 +12,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
 
     var title: LocalizedStringResource {
         switch self {
-        case .today: "Today"
+        case .today: "Home"
         case .saved: "Saved"
         case .following: "Following"
         case .calendar: "Calendar"
@@ -22,7 +22,7 @@ enum AppTab: Int, CaseIterable, Identifiable, Hashable {
 
     var symbolName: String {
         switch self {
-        case .today: "sun.max"
+        case .today: "house.fill"
         case .saved: "bookmark"
         case .following: "eye"
         case .calendar: "calendar"
@@ -51,7 +51,6 @@ final class AppRouter {
     var profilePath = NavigationPath()
 
     func showTopicDetail(_ topicId: UUID) {
-        selectedTab = .following
         followingPath.append(FollowingDestination.topicDetail(topicId))
     }
 

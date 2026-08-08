@@ -5,7 +5,15 @@ import Foundation
 final class TodayStore {
     private(set) var state: TodayViewState = .loading
     private(set) var pendingInsightIDs: Set<UUID> = []
+    private(set) var isLoadingMore = false
     private var isPollingForContent = false
+    private var selectedCategory = "all"
+    private var currentPage = 1
+
+    var hasNextPage: Bool {
+        guard case .loaded(let brief) = state else { return false }
+        return brief.pagination.hasNextPage
+    }
 
     var isPerformingAction: Bool { !pendingInsightIDs.isEmpty }
 
@@ -24,7 +32,8 @@ final class TodayStore {
     func load() async {
         state = .loading
         do {
-            let brief = try await briefService.fetchBrief(for: .now)
+            let brief = try await briefService.fetchBrief(for: .now, category: selectedCategory, page: 1)
+            currentPage = 1
             state = .loaded(brief)
             if !hasContent(brief) {
                 try? await topicService.prepareContent()
@@ -37,7 +46,8 @@ final class TodayStore {
 
     func refresh() async {
         do {
-            let brief = try await briefService.fetchBrief(for: .now)
+            let brief = try await briefService.fetchBrief(for: .now, category: selectedCategory, page: 1)
+            currentPage = 1
             if hasContent(brief) {
                 state = .loaded(brief)
             } else if case .loaded(let current) = state, hasContent(current) {
@@ -80,12 +90,49 @@ final class TodayStore {
                 } catch {
                     return
                 }
-                guard let brief = try? await briefService.fetchBrief(for: .now) else { continue }
+                guard let brief = try? await briefService.fetchBrief(
+                    for: .now,
+                    category: selectedCategory,
+                    page: 1
+                ) else { continue }
                 guard hasContent(brief) else { continue }
                 state = .loaded(brief)
                 return
             }
         }
+    }
+
+    func selectCategory(_ category: String) async {
+        guard category != selectedCategory else { return }
+        selectedCategory = category
+        currentPage = 1
+        state = .loading
+        do {
+            state = .loaded(try await briefService.fetchBrief(for: .now, category: category, page: 1))
+        } catch {
+            state = .error
+        }
+    }
+
+    func loadMore() async {
+        guard !isLoadingMore, hasNextPage, case .loaded(var current) = state else { return }
+        isLoadingMore = true
+        defer { isLoadingMore = false }
+        do {
+            let nextPage = currentPage + 1
+            let next = try await briefService.fetchBrief(
+                for: .now,
+                category: selectedCategory,
+                page: nextPage
+            )
+            current.importantInsights.append(contentsOf: next.importantInsights)
+            current.otherInsights.append(contentsOf: next.otherInsights)
+            current.upcomingItems.append(contentsOf: next.upcomingItems)
+            current.filters = next.filters
+            current.pagination = next.pagination
+            currentPage = nextPage
+            state = .loaded(current)
+        } catch {}
     }
 
     func save(_ insight: Insight) {

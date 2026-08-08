@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// Decides whether to show onboarding or the main tab experience, and hosts
-/// the four-tab shell once onboarding is complete.
+/// the Home experience once onboarding is complete.
 struct RootView: View {
     @Environment(AppEnvironment.self) private var environment
     @Environment(LocalizationManager.self) private var localization
@@ -79,8 +79,14 @@ struct RootView: View {
 
     private var mainTabView: some View {
         TabView(selection: $router.selectedTab) {
-            NavigationStack {
+            NavigationStack(path: $router.followingPath) {
                 TodayView()
+                    .navigationDestination(for: FollowingDestination.self) { destination in
+                        switch destination {
+                        case .topicDetail(let id):
+                            TopicDetailView(topicId: id)
+                        }
+                    }
             }
             .tabItem { Label { Text(AppTab.today.title) } icon: { Image(systemName: AppTab.today.symbolName) } }
             .tag(AppTab.today)
@@ -90,18 +96,6 @@ struct RootView: View {
             }
             .tabItem { Label { Text(AppTab.saved.title) } icon: { Image(systemName: AppTab.saved.symbolName) } }
             .tag(AppTab.saved)
-
-            NavigationStack(path: $router.followingPath) {
-                FollowingView()
-                    .navigationDestination(for: FollowingDestination.self) { destination in
-                        switch destination {
-                        case .topicDetail(let id):
-                            TopicDetailView(topicId: id)
-                        }
-                    }
-            }
-            .tabItem { Label { Text(AppTab.following.title) } icon: { Image(systemName: AppTab.following.symbolName) } }
-            .tag(AppTab.following)
 
             NavigationStack {
                 CalendarView()

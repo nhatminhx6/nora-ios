@@ -2,7 +2,7 @@ import Foundation
 
 /// Produces the daily brief shown on the Today screen.
 protocol BriefService: Sendable {
-    func fetchBrief(for date: Date) async throws -> Brief
+    func fetchBrief(for date: Date, category: String, page: Int) async throws -> Brief
     func submitReflection(question: String, answer: String) async throws
 }
 
@@ -15,8 +15,11 @@ struct LiveBriefService: BriefService {
 
     init(client: APIClient = APIClient()) { self.client = client }
 
-    func fetchBrief(for date: Date) async throws -> Brief {
-        let response: DailyBriefResponse = try await client.send("briefs/daily")
+    func fetchBrief(for date: Date, category: String, page: Int) async throws -> Brief {
+        let encodedCategory = category.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "all"
+        let response: DailyBriefResponse = try await client.send(
+            "feed?category=\(encodedCategory)&page=\(page)"
+        )
         return response.brief ?? Brief(date: date, headline: "")
     }
 
@@ -38,7 +41,7 @@ actor MockBriefService: BriefService {
         self.brief = seed
     }
 
-    func fetchBrief(for date: Date) async throws -> Brief {
+    func fetchBrief(for date: Date, category: String, page: Int) async throws -> Brief {
         try await Task.sleep(for: .milliseconds(400))
         if shouldFail {
             throw BriefServiceError.refreshFailed
